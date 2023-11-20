@@ -1,2 +1,2 @@
 # ucerf3_etas_use_cases
-Docker build scripts for UCERF-ETAS
+Use case examples for UCERF3-ETAS for Quakeworx
