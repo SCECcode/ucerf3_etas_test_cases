@@ -14,7 +14,7 @@ This is a multi-node example of UCERF3-ETAS. This contains a slurm script that i
 
 # Software Support:
 Software support for UCERF3-ETAS  is provided by that Southern California Earthquake Center (SCEC) Research Computing Group.
-1. [pyCSEP Issues](https://github.com/SCECcode/ucerf3_etas_use_cases/issues)
+1. [UCERF3-ETAS Issues](https://github.com/SCECcode/ucerf3_etas_use_cases/issues)
 2. Email Contact: software [at] scec [dot] org
 
 # Contributing:
