@@ -4,4 +4,5 @@ This use case runs 10k simulations on a single node. It currently takes around 3
 
 # Storage Requirements
 
+* Input file size: 81kb
 * After simulation and plots: 4.3GB
