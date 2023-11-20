@@ -1,0 +1,3318 @@
+{
+  "numSimulations": 10000,
+  "duration": 10.0,
+  "startTimeMillis": 1562383194040,
+  "includeSpontaneous": false,
+  "randomSeed": 1699462355685,
+  "binaryOutput": true,
+  "binaryOutputFilters": [
+    {
+      "prefix": "results_complete",
+      "descendantsOnly": false
+    },
+    {
+      "prefix": "results_m5_preserve_chain",
+      "minMag": 5.0,
+      "preserveChainBelowMag": true,
+      "descendantsOnly": false
+    }
+  ],
+  "forceRecalc": false,
+  "simulationName": "ComCat M7.1 (ci38457511), ShakeMap Surfaces",
+  "numRetries": 3,
+  "outputDir": "${ETAS_SIM_DIR}/scenario_2",
+  "treatTriggerCatalogAsSpontaneous": false,
+  "triggerRuptures": [
+    {
+      "occurrenceTimeMillis": 1562259775340,
+      "comcatEventID": "ci38443095",
+      "mag": 3.98,
+      "latitude": 35.7081667,
+      "longitude": -117.5036667,
+      "depth": 10.6
+    },
+    {
+      "occurrenceTimeMillis": 1562261629000,
+      "comcatEventID": "ci38443183",
+      "mag": 6.4,
+      "latitude": 35.7053333,
+      "longitude": -117.5038333,
+      "depth": 10.5,
+      "ruptureSurfaces": [
+        {
+          "outline": [
+            {
+              "latitude": 35.6051534466,
+              "longitude": -117.5905380735,
+              "depth": 0.0
+            },
+            {
+              "latitude": 35.6173144101,
+              "longitude": -117.5724963465,
+              "depth": 0.0
+            },
+            {
+              "latitude": 35.6173135736,
+              "longitude": -117.5726723708,
+              "depth": 0.0
+            },
+            {
+              "latitude": 35.61731357360001,
+              "longitude": -117.5726723708,
+              "depth": 15.0
+            },
+            {
+              "latitude": 35.6173144101,
+              "longitude": -117.57249634649999,
+              "depth": 15.0
+            },
+            {
+              "latitude": 35.6051534466,
+              "longitude": -117.5905380735,
+              "depth": 15.0
+            },
+            {
+              "latitude": 35.6051534466,
+              "longitude": -117.5905380735,
+              "depth": 0.0
+            }
+          ]
+        },
+        {
+          "outline": [
+            {
+              "latitude": 35.6338128629,
+              "longitude": -117.5483167831,
+              "depth": 0.0
+            },
+            {
+              "latitude": 35.6413274733,
+              "longitude": -117.5393878708,
+              "depth": 0.0
+            },
+            {
+              "latitude": 35.664283512,
+              "longitude": -117.5161164397,
+              "depth": 0.0
+            },
+            {
+              "latitude": 35.664283512000004,
+              "longitude": -117.51611643970001,
+              "depth": 15.0
+            },
+            {
+              "latitude": 35.641327473299995,
+              "longitude": -117.5393878708,
+              "depth": 15.0
+            },
+            {
+              "latitude": 35.63381286290001,
+              "longitude": -117.54831678310002,
+              "depth": 15.0
+            },
+            {
+              "latitude": 35.6338128629,
+              "longitude": -117.5483167831,
+              "depth": 0.0
+            }
+          ]
+        },
+        {
+          "outline": [
+            {
+              "latitude": 35.6322100797,
+              "longitude": -117.5530595425,
+              "depth": 0.0
+            },
+            {
+              "latitude": 35.6196274701,
+              "longitude": -117.5696962655,
+              "depth": 0.0
+            },
+            {
+              "latitude": 35.6196274701,
+              "longitude": -117.56969626549999,
+              "depth": 15.0
+            },
+            {
+              "latitude": 35.6322100797,
+              "longitude": -117.55305954249998,
+              "depth": 15.0
+            },
+            {
+              "latitude": 35.6322100797,
+              "longitude": -117.5530595425,
+              "depth": 0.0
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "occurrenceTimeMillis": 1562261701660,
+      "comcatEventID": "ci38443191",
+      "mag": 4.49,
+      "latitude": 35.644,
+      "longitude": -117.5671667,
+      "depth": 4.64
+    },
+    {
+      "occurrenceTimeMillis": 1562261717430,
+      "comcatEventID": "ci37255940",
+      "mag": 3.93,
+      "latitude": 35.6886667,
+      "longitude": -117.474,
+      "depth": 6.48
+    },
+    {
+      "occurrenceTimeMillis": 1562261746340,
+      "comcatEventID": "ci37222356",
+      "mag": 3.63,
+      "latitude": 35.6936667,
+      "longitude": -117.437,
+      "depth": 7.65
+    },
+    {
+      "occurrenceTimeMillis": 1562261752170,
+      "comcatEventID": "ci37218988",
+      "mag": 4.28,
+      "latitude": 35.687,
+      "longitude": -117.5061667,
+      "depth": 1.6
+    },
+    {
+      "occurrenceTimeMillis": 1562261764360,
+      "comcatEventID": "ci37255980",
+      "mag": 3.94,
+      "latitude": 35.7341667,
+      "longitude": -117.5741667,
+      "depth": 6.41
+    },
+    {
+      "occurrenceTimeMillis": 1562261818950,
+      "comcatEventID": "ci37222380",
+      "mag": 3.41,
+      "latitude": 35.7258333,
+      "longitude": -117.5593333,
+      "depth": 5.3
+    },
+    {
+      "occurrenceTimeMillis": 1562261821140,
+      "comcatEventID": "ci37222372",
+      "mag": 3.66,
+      "latitude": 35.7105,
+      "longitude": -117.4773333,
+      "depth": 1.57
+    },
+    {
+      "occurrenceTimeMillis": 1562261834850,
+      "comcatEventID": "ci37222364",
+      "mag": 3.97,
+      "latitude": 35.6655,
+      "longitude": -117.516,
+      "depth": 1.64
+    },
+    {
+      "occurrenceTimeMillis": 1562261845640,
+      "comcatEventID": "ci37218996",
+      "mag": 4.01,
+      "latitude": 35.6758333,
+      "longitude": -117.4575,
+      "depth": 15.82
+    },
+    {
+      "occurrenceTimeMillis": 1562261866320,
+      "comcatEventID": "ci37259580",
+      "mag": 3.24,
+      "latitude": 35.6811667,
+      "longitude": -117.5261667,
+      "depth": 6.83
+    },
+    {
+      "occurrenceTimeMillis": 1562261875500,
+      "comcatEventID": "ci38443199",
+      "mag": 3.86,
+      "latitude": 35.7456667,
+      "longitude": -117.5516667,
+      "depth": 8.29
+    },
+    {
+      "occurrenceTimeMillis": 1562261901450,
+      "comcatEventID": "ci37421941",
+      "mag": 3.73,
+      "latitude": 35.714,
+      "longitude": -117.476,
+      "depth": 1.74
+    },
+    {
+      "occurrenceTimeMillis": 1562261927500,
+      "comcatEventID": "us70004a0n",
+      "mag": 3.5,
+      "latitude": 35.6215,
+      "longitude": -117.5782,
+      "depth": 9.7
+    },
+    {
+      "occurrenceTimeMillis": 1562261927760,
+      "comcatEventID": "ci37222396",
+      "mag": 3.5,
+      "latitude": 35.6235,
+      "longitude": -117.596,
+      "depth": 8.55
+    },
+    {
+      "occurrenceTimeMillis": 1562261937260,
+      "comcatEventID": "ci37256196",
+      "mag": 3.43,
+      "latitude": 35.6698333,
+      "longitude": -117.5295,
+      "depth": 1.87
+    },
+    {
+      "occurrenceTimeMillis": 1562261945120,
+      "comcatEventID": "ci37259588",
+      "mag": 3.25,
+      "latitude": 35.7168333,
+      "longitude": -117.6661667,
+      "depth": 5.17
+    },
+    {
+      "occurrenceTimeMillis": 1562261954620,
+      "comcatEventID": "ci37259612",
+      "mag": 2.98,
+      "latitude": 35.6215,
+      "longitude": -117.5945,
+      "depth": 8.82
+    },
+    {
+      "occurrenceTimeMillis": 1562261973310,
+      "comcatEventID": "ci37222404",
+      "mag": 3.11,
+      "latitude": 35.5743333,
+      "longitude": -117.6366667,
+      "depth": 6.85
+    },
+    {
+      "occurrenceTimeMillis": 1562261975360,
+      "comcatEventID": "ci38443215",
+      "mag": 3.69,
+      "latitude": 35.6876667,
+      "longitude": -117.4931667,
+      "depth": 10.96
+    },
+    {
+      "occurrenceTimeMillis": 1562261991740,
+      "comcatEventID": "ci37259660",
+      "mag": 3.11,
+      "latitude": 35.6715,
+      "longitude": -117.5453333,
+      "depth": 2.27
+    },
+    {
+      "occurrenceTimeMillis": 1562262002250,
+      "comcatEventID": "ci38443223",
+      "mag": 3.8,
+      "latitude": 35.7253333,
+      "longitude": -117.5708333,
+      "depth": 6.63
+    },
+    {
+      "occurrenceTimeMillis": 1562262018520,
+      "comcatEventID": "ci38443231",
+      "mag": 4.13,
+      "latitude": 35.707,
+      "longitude": -117.5101667,
+      "depth": 8.66
+    },
+    {
+      "occurrenceTimeMillis": 1562262034900,
+      "comcatEventID": "ci37222508",
+      "mag": 3.54,
+      "latitude": 35.6948333,
+      "longitude": -117.5018333,
+      "depth": 2.04
+    },
+    {
+      "occurrenceTimeMillis": 1562262046140,
+      "comcatEventID": "ci37222516",
+      "mag": 3.42,
+      "latitude": 35.7298333,
+      "longitude": -117.5548333,
+      "depth": 7.72
+    },
+    {
+      "occurrenceTimeMillis": 1562262051720,
+      "comcatEventID": "ci37259692",
+      "mag": 3.13,
+      "latitude": 35.6805,
+      "longitude": -117.4743333,
+      "depth": 7.09
+    },
+    {
+      "occurrenceTimeMillis": 1562262080850,
+      "comcatEventID": "ci37421957",
+      "mag": 3.3,
+      "latitude": 35.7266667,
+      "longitude": -117.5288333,
+      "depth": 1.97
+    },
+    {
+      "occurrenceTimeMillis": 1562262174130,
+      "comcatEventID": "ci38443239",
+      "mag": 3.22,
+      "latitude": 35.7301667,
+      "longitude": -117.5586667,
+      "depth": 7.84
+    },
+    {
+      "occurrenceTimeMillis": 1562262209200,
+      "comcatEventID": "us70004a0z",
+      "mag": 3.6,
+      "latitude": 35.6783,
+      "longitude": -117.5488,
+      "depth": 5.15
+    },
+    {
+      "occurrenceTimeMillis": 1562262264020,
+      "comcatEventID": "ci37421981",
+      "mag": 2.77,
+      "latitude": 35.7478333,
+      "longitude": -117.54,
+      "depth": 9.4
+    },
+    {
+      "occurrenceTimeMillis": 1562262272820,
+      "comcatEventID": "ci38443255",
+      "mag": 3.86,
+      "latitude": 35.6875,
+      "longitude": -117.5071667,
+      "depth": 1.54
+    },
+    {
+      "occurrenceTimeMillis": 1562262305780,
+      "comcatEventID": "ci37421997",
+      "mag": 3.03,
+      "latitude": 35.6976667,
+      "longitude": -117.4865,
+      "depth": 2.24
+    },
+    {
+      "occurrenceTimeMillis": 1562262323950,
+      "comcatEventID": "ci37421989",
+      "mag": 3.03,
+      "latitude": 35.7151667,
+      "longitude": -117.5473333,
+      "depth": 7.21
+    },
+    {
+      "occurrenceTimeMillis": 1562262328630,
+      "comcatEventID": "ci37222524",
+      "mag": 3.21,
+      "latitude": 35.7348333,
+      "longitude": -117.5368333,
+      "depth": 10.34
+    },
+    {
+      "occurrenceTimeMillis": 1562262363710,
+      "comcatEventID": "ci38443263",
+      "mag": 2.96,
+      "latitude": 35.6431667,
+      "longitude": -117.6101667,
+      "depth": 10.14
+    },
+    {
+      "occurrenceTimeMillis": 1562262380320,
+      "comcatEventID": "ci37222532",
+      "mag": 2.56,
+      "latitude": 35.6563333,
+      "longitude": -117.5325,
+      "depth": 1.52
+    },
+    {
+      "occurrenceTimeMillis": 1562262409960,
+      "comcatEventID": "ci38443271",
+      "mag": 3.07,
+      "latitude": 35.6385,
+      "longitude": -117.6108333,
+      "depth": 10.97
+    },
+    {
+      "occurrenceTimeMillis": 1562262437810,
+      "comcatEventID": "ci38443279",
+      "mag": 3.5,
+      "latitude": 35.7455,
+      "longitude": -117.5465,
+      "depth": 7.11
+    },
+    {
+      "occurrenceTimeMillis": 1562262460970,
+      "comcatEventID": "ci37222548",
+      "mag": 3.11,
+      "latitude": 35.726,
+      "longitude": -117.5585,
+      "depth": 3.58
+    },
+    {
+      "occurrenceTimeMillis": 1562262474970,
+      "comcatEventID": "ci37222556",
+      "mag": 3.4,
+      "latitude": 35.7286667,
+      "longitude": -117.5606667,
+      "depth": 5.25
+    },
+    {
+      "occurrenceTimeMillis": 1562262483160,
+      "comcatEventID": "ci37222564",
+      "mag": 3.27,
+      "latitude": 35.6365,
+      "longitude": -117.5518333,
+      "depth": 6.62
+    },
+    {
+      "occurrenceTimeMillis": 1562262495680,
+      "comcatEventID": "ci37222572",
+      "mag": 3.11,
+      "latitude": 35.7053333,
+      "longitude": -117.5245,
+      "depth": 5.52
+    },
+    {
+      "occurrenceTimeMillis": 1562262504150,
+      "comcatEventID": "ci37222580",
+      "mag": 2.96,
+      "latitude": 35.6593333,
+      "longitude": -117.5263333,
+      "depth": 2.68
+    },
+    {
+      "occurrenceTimeMillis": 1562262575190,
+      "comcatEventID": "ci37222596",
+      "mag": 2.52,
+      "latitude": 35.7335,
+      "longitude": -117.5068333,
+      "depth": 3.91
+    },
+    {
+      "occurrenceTimeMillis": 1562262578950,
+      "comcatEventID": "ci37222668",
+      "mag": 2.57,
+      "latitude": 35.687,
+      "longitude": -117.4906667,
+      "depth": 10.66
+    },
+    {
+      "occurrenceTimeMillis": 1562262648290,
+      "comcatEventID": "ci37222692",
+      "mag": 2.73,
+      "latitude": 35.738,
+      "longitude": -117.5293333,
+      "depth": 7.72
+    },
+    {
+      "occurrenceTimeMillis": 1562262648960,
+      "comcatEventID": "ci38443303",
+      "mag": 2.79,
+      "latitude": 35.678,
+      "longitude": -117.4991667,
+      "depth": 1.14
+    },
+    {
+      "occurrenceTimeMillis": 1562262706650,
+      "comcatEventID": "ci38443287",
+      "mag": 3.46,
+      "latitude": 35.674,
+      "longitude": -117.5235,
+      "depth": 5.3
+    },
+    {
+      "occurrenceTimeMillis": 1562262761700,
+      "comcatEventID": "ci38443295",
+      "mag": 2.92,
+      "latitude": 35.7218333,
+      "longitude": -117.5251667,
+      "depth": 7.04
+    },
+    {
+      "occurrenceTimeMillis": 1562262899560,
+      "comcatEventID": "ci38443327",
+      "mag": 2.53,
+      "latitude": 35.6391667,
+      "longitude": -117.5628333,
+      "depth": 10.48
+    },
+    {
+      "occurrenceTimeMillis": 1562262930800,
+      "comcatEventID": "ci37222876",
+      "mag": 2.57,
+      "latitude": 35.6705,
+      "longitude": -117.5221667,
+      "depth": 3.91
+    },
+    {
+      "occurrenceTimeMillis": 1562263051460,
+      "comcatEventID": "ci38443311",
+      "mag": 2.95,
+      "latitude": 35.6595,
+      "longitude": -117.5223333,
+      "depth": 2.3
+    },
+    {
+      "occurrenceTimeMillis": 1562263063060,
+      "comcatEventID": "ci37222932",
+      "mag": 2.78,
+      "latitude": 35.6725,
+      "longitude": -117.4743333,
+      "depth": 8.76
+    },
+    {
+      "occurrenceTimeMillis": 1562263082640,
+      "comcatEventID": "ci38443319",
+      "mag": 3.33,
+      "latitude": 35.702,
+      "longitude": -117.5083333,
+      "depth": 4.77
+    },
+    {
+      "occurrenceTimeMillis": 1562263240190,
+      "comcatEventID": "ci38443335",
+      "mag": 2.67,
+      "latitude": 35.6303333,
+      "longitude": -117.569,
+      "depth": 1.64
+    },
+    {
+      "occurrenceTimeMillis": 1562263261190,
+      "comcatEventID": "ci37223148",
+      "mag": 2.59,
+      "latitude": 35.6733333,
+      "longitude": -117.5118333,
+      "depth": 1.49
+    },
+    {
+      "occurrenceTimeMillis": 1562263283180,
+      "comcatEventID": "ci37422005",
+      "mag": 3.53,
+      "latitude": 35.6876667,
+      "longitude": -117.5085,
+      "depth": 1.26
+    },
+    {
+      "occurrenceTimeMillis": 1562263291230,
+      "comcatEventID": "ci37223156",
+      "mag": 3.42,
+      "latitude": 35.5978333,
+      "longitude": -117.5905,
+      "depth": 6.79
+    },
+    {
+      "occurrenceTimeMillis": 1562263374110,
+      "comcatEventID": "ci38443351",
+      "mag": 2.53,
+      "latitude": 35.6066667,
+      "longitude": -117.5821667,
+      "depth": 5.8
+    },
+    {
+      "occurrenceTimeMillis": 1562263398590,
+      "comcatEventID": "ci38443359",
+      "mag": 2.85,
+      "latitude": 35.7478333,
+      "longitude": -117.5425,
+      "depth": 6.85
+    },
+    {
+      "occurrenceTimeMillis": 1562263541830,
+      "comcatEventID": "ci38443375",
+      "mag": 2.76,
+      "latitude": 35.7153333,
+      "longitude": -117.5295,
+      "depth": 4.54
+    },
+    {
+      "occurrenceTimeMillis": 1562263555910,
+      "comcatEventID": "ci37223228",
+      "mag": 2.61,
+      "latitude": 35.7266667,
+      "longitude": -117.5165,
+      "depth": 8.96
+    },
+    {
+      "occurrenceTimeMillis": 1562263576110,
+      "comcatEventID": "ci38443383",
+      "mag": 3.79,
+      "latitude": 35.6606667,
+      "longitude": -117.523,
+      "depth": 2.14
+    },
+    {
+      "occurrenceTimeMillis": 1562263611050,
+      "comcatEventID": "ci37223236",
+      "mag": 2.6,
+      "latitude": 35.6931667,
+      "longitude": -117.462,
+      "depth": 11.56
+    },
+    {
+      "occurrenceTimeMillis": 1562263629270,
+      "comcatEventID": "ci38443391",
+      "mag": 3.51,
+      "latitude": 35.5991667,
+      "longitude": -117.6101667,
+      "depth": 2.12
+    },
+    {
+      "occurrenceTimeMillis": 1562263630910,
+      "comcatEventID": "ci37223244",
+      "mag": 3.49,
+      "latitude": 35.6508333,
+      "longitude": -117.542,
+      "depth": 2.77
+    },
+    {
+      "occurrenceTimeMillis": 1562263640290,
+      "comcatEventID": "ci37259964",
+      "mag": 3.02,
+      "latitude": 35.5688333,
+      "longitude": -117.6365,
+      "depth": 6.67
+    },
+    {
+      "occurrenceTimeMillis": 1562263670810,
+      "comcatEventID": "ci37223252",
+      "mag": 2.55,
+      "latitude": 35.7295,
+      "longitude": -117.533,
+      "depth": 7.25
+    },
+    {
+      "occurrenceTimeMillis": 1562263713160,
+      "comcatEventID": "ci38443407",
+      "mag": 3.38,
+      "latitude": 35.6678333,
+      "longitude": -117.5061667,
+      "depth": 2.27
+    },
+    {
+      "occurrenceTimeMillis": 1562263725070,
+      "comcatEventID": "ci37223308",
+      "mag": 3.55,
+      "latitude": 35.7108333,
+      "longitude": -117.4768333,
+      "depth": 1.17
+    },
+    {
+      "occurrenceTimeMillis": 1562263832710,
+      "comcatEventID": "ci38443415",
+      "mag": 3.46,
+      "latitude": 35.6598333,
+      "longitude": -117.5348333,
+      "depth": 10.25
+    },
+    {
+      "occurrenceTimeMillis": 1562263882870,
+      "comcatEventID": "ci38443423",
+      "mag": 2.69,
+      "latitude": 35.6003333,
+      "longitude": -117.5951667,
+      "depth": 7.33
+    },
+    {
+      "occurrenceTimeMillis": 1562263972070,
+      "comcatEventID": "ci38443431",
+      "mag": 3.44,
+      "latitude": 35.6703333,
+      "longitude": -117.5605,
+      "depth": 6.91
+    },
+    {
+      "occurrenceTimeMillis": 1562264025530,
+      "comcatEventID": "ci37223380",
+      "mag": 2.89,
+      "latitude": 35.7003333,
+      "longitude": -117.4873333,
+      "depth": 10.98
+    },
+    {
+      "occurrenceTimeMillis": 1562264031400,
+      "comcatEventID": "ci38443439",
+      "mag": 3.5,
+      "latitude": 35.7081667,
+      "longitude": -117.485,
+      "depth": 6.44
+    },
+    {
+      "occurrenceTimeMillis": 1562264104970,
+      "comcatEventID": "ci38443447",
+      "mag": 2.75,
+      "latitude": 35.6103333,
+      "longitude": -117.595,
+      "depth": 4.94
+    },
+    {
+      "occurrenceTimeMillis": 1562264112820,
+      "comcatEventID": "ci37420701",
+      "mag": 3.23,
+      "latitude": 35.6691667,
+      "longitude": -117.5203333,
+      "depth": 1.84
+    },
+    {
+      "occurrenceTimeMillis": 1562264193730,
+      "comcatEventID": "ci38443463",
+      "mag": 2.94,
+      "latitude": 35.7251667,
+      "longitude": -117.5335,
+      "depth": 6.74
+    },
+    {
+      "occurrenceTimeMillis": 1562264235320,
+      "comcatEventID": "ci38443471",
+      "mag": 2.87,
+      "latitude": 35.7185,
+      "longitude": -117.5336667,
+      "depth": 4.94
+    },
+    {
+      "occurrenceTimeMillis": 1562264325720,
+      "comcatEventID": "ci38443487",
+      "mag": 3.38,
+      "latitude": 35.638,
+      "longitude": -117.611,
+      "depth": 9.43
+    },
+    {
+      "occurrenceTimeMillis": 1562264332070,
+      "comcatEventID": "ci37223676",
+      "mag": 2.98,
+      "latitude": 35.6123333,
+      "longitude": -117.624,
+      "depth": 0.0
+    },
+    {
+      "occurrenceTimeMillis": 1562264348090,
+      "comcatEventID": "ci37223684",
+      "mag": 2.6,
+      "latitude": 35.7236667,
+      "longitude": -117.5085,
+      "depth": 11.57
+    },
+    {
+      "occurrenceTimeMillis": 1562264485340,
+      "comcatEventID": "ci38443495",
+      "mag": 2.61,
+      "latitude": 35.6788333,
+      "longitude": -117.5153333,
+      "depth": 2.91
+    },
+    {
+      "occurrenceTimeMillis": 1562264763750,
+      "comcatEventID": "ci38443519",
+      "mag": 3.13,
+      "latitude": 35.6638333,
+      "longitude": -117.5245,
+      "depth": 2.53
+    },
+    {
+      "occurrenceTimeMillis": 1562264846770,
+      "comcatEventID": "ci38443527",
+      "mag": 3.29,
+      "latitude": 35.6748333,
+      "longitude": -117.5143333,
+      "depth": 2.68
+    },
+    {
+      "occurrenceTimeMillis": 1562264879440,
+      "comcatEventID": "ci38443535",
+      "mag": 4.23,
+      "latitude": 35.745,
+      "longitude": -117.5521667,
+      "depth": 6.64
+    },
+    {
+      "occurrenceTimeMillis": 1562264923640,
+      "comcatEventID": "ci38443543",
+      "mag": 3.75,
+      "latitude": 35.6661667,
+      "longitude": -117.5656667,
+      "depth": 7.14
+    },
+    {
+      "occurrenceTimeMillis": 1562265289010,
+      "comcatEventID": "ci37224604",
+      "mag": 2.59,
+      "latitude": 35.6895,
+      "longitude": -117.4883333,
+      "depth": 0.63
+    },
+    {
+      "occurrenceTimeMillis": 1562265350890,
+      "comcatEventID": "ci37229300",
+      "mag": 2.98,
+      "latitude": 35.6021667,
+      "longitude": -117.603,
+      "depth": 4.21
+    },
+    {
+      "occurrenceTimeMillis": 1562265451680,
+      "comcatEventID": "ci38443591",
+      "mag": 2.63,
+      "latitude": 35.7223333,
+      "longitude": -117.5643333,
+      "depth": 4.12
+    },
+    {
+      "occurrenceTimeMillis": 1562265525630,
+      "comcatEventID": "ci37229572",
+      "mag": 2.58,
+      "latitude": 35.704,
+      "longitude": -117.4935,
+      "depth": 7.91
+    },
+    {
+      "occurrenceTimeMillis": 1562265584440,
+      "comcatEventID": "ci38443607",
+      "mag": 4.59,
+      "latitude": 35.6013333,
+      "longitude": -117.597,
+      "depth": 2.81
+    },
+    {
+      "occurrenceTimeMillis": 1562265656740,
+      "comcatEventID": "ci37224612",
+      "mag": 3.05,
+      "latitude": 35.652,
+      "longitude": -117.5368333,
+      "depth": 2.03
+    },
+    {
+      "occurrenceTimeMillis": 1562265674270,
+      "comcatEventID": "ci38443615",
+      "mag": 3.07,
+      "latitude": 35.6763333,
+      "longitude": -117.5115,
+      "depth": 2.13
+    },
+    {
+      "occurrenceTimeMillis": 1562265865000,
+      "comcatEventID": "ci38443631",
+      "mag": 3.09,
+      "latitude": 35.719,
+      "longitude": -117.5586667,
+      "depth": 2.06
+    },
+    {
+      "occurrenceTimeMillis": 1562266026590,
+      "comcatEventID": "ci38443647",
+      "mag": 4.34,
+      "latitude": 35.6758333,
+      "longitude": -117.4853333,
+      "depth": 8.53
+    },
+    {
+      "occurrenceTimeMillis": 1562266042600,
+      "comcatEventID": "ci37421213",
+      "mag": 4.02,
+      "latitude": 35.6755,
+      "longitude": -117.472,
+      "depth": 10.27
+    },
+    {
+      "occurrenceTimeMillis": 1562266064310,
+      "comcatEventID": "ci37230556",
+      "mag": 3.33,
+      "latitude": 35.6876667,
+      "longitude": -117.5146667,
+      "depth": 7.87
+    },
+    {
+      "occurrenceTimeMillis": 1562266079170,
+      "comcatEventID": "ci37230564",
+      "mag": 3.22,
+      "latitude": 35.6708333,
+      "longitude": -117.4686667,
+      "depth": 10.52
+    },
+    {
+      "occurrenceTimeMillis": 1562266095850,
+      "comcatEventID": "ci37230580",
+      "mag": 2.89,
+      "latitude": 35.7091667,
+      "longitude": -117.4656667,
+      "depth": 1.77
+    },
+    {
+      "occurrenceTimeMillis": 1562266207150,
+      "comcatEventID": "ci38443663",
+      "mag": 2.75,
+      "latitude": 35.6411667,
+      "longitude": -117.5591667,
+      "depth": 9.7
+    },
+    {
+      "occurrenceTimeMillis": 1562266215910,
+      "comcatEventID": "ci38443671",
+      "mag": 3.7,
+      "latitude": 35.682,
+      "longitude": -117.4961667,
+      "depth": 1.26
+    },
+    {
+      "occurrenceTimeMillis": 1562266333620,
+      "comcatEventID": "ci38443679",
+      "mag": 2.78,
+      "latitude": 35.656,
+      "longitude": -117.5376667,
+      "depth": 2.31
+    },
+    {
+      "occurrenceTimeMillis": 1562266377560,
+      "comcatEventID": "ci37230844",
+      "mag": 2.85,
+      "latitude": 35.6681667,
+      "longitude": -117.5115,
+      "depth": 3.16
+    },
+    {
+      "occurrenceTimeMillis": 1562266383340,
+      "comcatEventID": "ci37230836",
+      "mag": 3.08,
+      "latitude": 35.6703333,
+      "longitude": -117.547,
+      "depth": 4.9
+    },
+    {
+      "occurrenceTimeMillis": 1562266407670,
+      "comcatEventID": "ci38443695",
+      "mag": 3.36,
+      "latitude": 35.7285,
+      "longitude": -117.5605,
+      "depth": 7.87
+    },
+    {
+      "occurrenceTimeMillis": 1562266453990,
+      "comcatEventID": "ci38443703",
+      "mag": 4.07,
+      "latitude": 35.5975,
+      "longitude": -117.5996667,
+      "depth": 5.33
+    },
+    {
+      "occurrenceTimeMillis": 1562266499090,
+      "comcatEventID": "ci37230868",
+      "mag": 2.86,
+      "latitude": 35.6706667,
+      "longitude": -117.5288333,
+      "depth": 4.57
+    },
+    {
+      "occurrenceTimeMillis": 1562266527680,
+      "comcatEventID": "ci38443711",
+      "mag": 3.03,
+      "latitude": 35.6753333,
+      "longitude": -117.4795,
+      "depth": 10.71
+    },
+    {
+      "occurrenceTimeMillis": 1562266566420,
+      "comcatEventID": "ci38443719",
+      "mag": 4.58,
+      "latitude": 35.716,
+      "longitude": -117.56,
+      "depth": 1.92
+    },
+    {
+      "occurrenceTimeMillis": 1562266582030,
+      "comcatEventID": "ci37420717",
+      "mag": 4.21,
+      "latitude": 35.7086667,
+      "longitude": -117.5541667,
+      "depth": 1.16
+    },
+    {
+      "occurrenceTimeMillis": 1562266620850,
+      "comcatEventID": "ci37230996",
+      "mag": 2.89,
+      "latitude": 35.7181667,
+      "longitude": -117.543,
+      "depth": 3.03
+    },
+    {
+      "occurrenceTimeMillis": 1562266635610,
+      "comcatEventID": "ci37230948",
+      "mag": 3.22,
+      "latitude": 35.6888333,
+      "longitude": -117.5293333,
+      "depth": 5.72
+    },
+    {
+      "occurrenceTimeMillis": 1562266662060,
+      "comcatEventID": "ci37230908",
+      "mag": 2.96,
+      "latitude": 35.7133333,
+      "longitude": -117.5481667,
+      "depth": 2.02
+    },
+    {
+      "occurrenceTimeMillis": 1562266672440,
+      "comcatEventID": "ci37230916",
+      "mag": 2.71,
+      "latitude": 35.6726667,
+      "longitude": -117.5125,
+      "depth": 2.64
+    },
+    {
+      "occurrenceTimeMillis": 1562266687890,
+      "comcatEventID": "ci38443727",
+      "mag": 2.79,
+      "latitude": 35.7246667,
+      "longitude": -117.558,
+      "depth": 1.91
+    },
+    {
+      "occurrenceTimeMillis": 1562266809670,
+      "comcatEventID": "ci38443751",
+      "mag": 3.22,
+      "latitude": 35.7111667,
+      "longitude": -117.5513333,
+      "depth": 1.99
+    },
+    {
+      "occurrenceTimeMillis": 1562266814000,
+      "comcatEventID": "ci37231484",
+      "mag": 3.14,
+      "latitude": 35.6773333,
+      "longitude": -117.5523333,
+      "depth": 5.01
+    },
+    {
+      "occurrenceTimeMillis": 1562266866360,
+      "comcatEventID": "ci37231516",
+      "mag": 2.67,
+      "latitude": 35.6485,
+      "longitude": -117.5375,
+      "depth": 1.57
+    },
+    {
+      "occurrenceTimeMillis": 1562266870800,
+      "comcatEventID": "ci38443759",
+      "mag": 3.03,
+      "latitude": 35.7086667,
+      "longitude": -117.5565,
+      "depth": 2.15
+    },
+    {
+      "occurrenceTimeMillis": 1562266888380,
+      "comcatEventID": "ci37231532",
+      "mag": 2.56,
+      "latitude": 35.6918333,
+      "longitude": -117.528,
+      "depth": 2.65
+    },
+    {
+      "occurrenceTimeMillis": 1562266944820,
+      "comcatEventID": "ci37231540",
+      "mag": 2.67,
+      "latitude": 35.6465,
+      "longitude": -117.5418333,
+      "depth": 1.88
+    },
+    {
+      "occurrenceTimeMillis": 1562267419820,
+      "comcatEventID": "ci38443823",
+      "mag": 3.29,
+      "latitude": 35.694,
+      "longitude": -117.4901667,
+      "depth": 1.58
+    },
+    {
+      "occurrenceTimeMillis": 1562267699490,
+      "comcatEventID": "ci38443831",
+      "mag": 3.0,
+      "latitude": 35.6548333,
+      "longitude": -117.5388333,
+      "depth": 2.42
+    },
+    {
+      "occurrenceTimeMillis": 1562267871360,
+      "comcatEventID": "ci38443855",
+      "mag": 2.98,
+      "latitude": 35.6951667,
+      "longitude": -117.5096667,
+      "depth": 1.46
+    },
+    {
+      "occurrenceTimeMillis": 1562267878140,
+      "comcatEventID": "ci37224620",
+      "mag": 3.26,
+      "latitude": 35.6268333,
+      "longitude": -117.601,
+      "depth": 10.4
+    },
+    {
+      "occurrenceTimeMillis": 1562268051760,
+      "comcatEventID": "ci38443863",
+      "mag": 2.76,
+      "latitude": 35.6401667,
+      "longitude": -117.553,
+      "depth": 1.72
+    },
+    {
+      "occurrenceTimeMillis": 1562268092090,
+      "comcatEventID": "ci38443871",
+      "mag": 4.5,
+      "latitude": 35.6715,
+      "longitude": -117.4788333,
+      "depth": 5.16
+    },
+    {
+      "occurrenceTimeMillis": 1562268380380,
+      "comcatEventID": "ci38443879",
+      "mag": 2.72,
+      "latitude": 35.7063333,
+      "longitude": -117.4855,
+      "depth": 2.25
+    },
+    {
+      "occurrenceTimeMillis": 1562268438260,
+      "comcatEventID": "ci38443895",
+      "mag": 2.82,
+      "latitude": 35.6676667,
+      "longitude": -117.4768333,
+      "depth": 8.06
+    },
+    {
+      "occurrenceTimeMillis": 1562269189720,
+      "comcatEventID": "ci38443983",
+      "mag": 2.7,
+      "latitude": 35.6813333,
+      "longitude": -117.5205,
+      "depth": 6.68
+    },
+    {
+      "occurrenceTimeMillis": 1562269208090,
+      "comcatEventID": "ci37232916",
+      "mag": 2.53,
+      "latitude": 35.7465,
+      "longitude": -117.563,
+      "depth": 4.49
+    },
+    {
+      "occurrenceTimeMillis": 1562269229120,
+      "comcatEventID": "ci38443991",
+      "mag": 2.67,
+      "latitude": 35.6555,
+      "longitude": -117.5203333,
+      "depth": 1.99
+    },
+    {
+      "occurrenceTimeMillis": 1562269744980,
+      "comcatEventID": "ci38444047",
+      "mag": 3.26,
+      "latitude": 35.683,
+      "longitude": -117.4895,
+      "depth": 1.04
+    },
+    {
+      "occurrenceTimeMillis": 1562269876980,
+      "comcatEventID": "ci38444063",
+      "mag": 3.35,
+      "latitude": 35.71,
+      "longitude": -117.5561667,
+      "depth": 2.09
+    },
+    {
+      "occurrenceTimeMillis": 1562269933050,
+      "comcatEventID": "ci38444071",
+      "mag": 2.86,
+      "latitude": 35.6101667,
+      "longitude": -117.5861667,
+      "depth": 6.68
+    },
+    {
+      "occurrenceTimeMillis": 1562270160500,
+      "comcatEventID": "ci38444103",
+      "mag": 4.16,
+      "latitude": 35.6623333,
+      "longitude": -117.524,
+      "depth": 1.49
+    },
+    {
+      "occurrenceTimeMillis": 1562270185890,
+      "comcatEventID": "ci37260124",
+      "mag": 3.27,
+      "latitude": 35.6636667,
+      "longitude": -117.5225,
+      "depth": 2.15
+    },
+    {
+      "occurrenceTimeMillis": 1562270280290,
+      "comcatEventID": "ci38444119",
+      "mag": 2.63,
+      "latitude": 35.7121667,
+      "longitude": -117.553,
+      "depth": 1.22
+    },
+    {
+      "occurrenceTimeMillis": 1562270471160,
+      "comcatEventID": "ci37420685",
+      "mag": 2.56,
+      "latitude": 35.6996667,
+      "longitude": -117.5028333,
+      "depth": 4.44
+    },
+    {
+      "occurrenceTimeMillis": 1562270492930,
+      "comcatEventID": "ci38444135",
+      "mag": 2.5,
+      "latitude": 35.678,
+      "longitude": -117.589,
+      "depth": 7.89
+    },
+    {
+      "occurrenceTimeMillis": 1562270657610,
+      "comcatEventID": "ci37233108",
+      "mag": 2.58,
+      "latitude": 35.6643333,
+      "longitude": -117.5218333,
+      "depth": 2.07
+    },
+    {
+      "occurrenceTimeMillis": 1562270768250,
+      "comcatEventID": "ci38444159",
+      "mag": 3.39,
+      "latitude": 35.6991667,
+      "longitude": -117.4891667,
+      "depth": 10.27
+    },
+    {
+      "occurrenceTimeMillis": 1562270882990,
+      "comcatEventID": "ci37233404",
+      "mag": 2.52,
+      "latitude": 35.6781667,
+      "longitude": -117.5095,
+      "depth": 2.57
+    },
+    {
+      "occurrenceTimeMillis": 1562271091440,
+      "comcatEventID": "ci38444191",
+      "mag": 2.6,
+      "latitude": 35.683,
+      "longitude": -117.5046667,
+      "depth": 1.86
+    },
+    {
+      "occurrenceTimeMillis": 1562271290340,
+      "comcatEventID": "ci38444215",
+      "mag": 3.99,
+      "latitude": 35.6991667,
+      "longitude": -117.5125,
+      "depth": 5.75
+    },
+    {
+      "occurrenceTimeMillis": 1562271456830,
+      "comcatEventID": "ci38444231",
+      "mag": 3.09,
+      "latitude": 35.7,
+      "longitude": -117.4836667,
+      "depth": 1.25
+    },
+    {
+      "occurrenceTimeMillis": 1562271789930,
+      "comcatEventID": "ci38444263",
+      "mag": 3.43,
+      "latitude": 35.6408333,
+      "longitude": -117.5973333,
+      "depth": 10.39
+    },
+    {
+      "occurrenceTimeMillis": 1562272472050,
+      "comcatEventID": "ci38444311",
+      "mag": 2.62,
+      "latitude": 35.6393333,
+      "longitude": -117.5838333,
+      "depth": 8.19
+    },
+    {
+      "occurrenceTimeMillis": 1562273126710,
+      "comcatEventID": "ci38444407",
+      "mag": 3.1,
+      "latitude": 35.7028333,
+      "longitude": -117.4775,
+      "depth": 1.31
+    },
+    {
+      "occurrenceTimeMillis": 1562273725070,
+      "comcatEventID": "ci38444487",
+      "mag": 3.4,
+      "latitude": 35.7116667,
+      "longitude": -117.4808333,
+      "depth": 2.39
+    },
+    {
+      "occurrenceTimeMillis": 1562273832360,
+      "comcatEventID": "ci38444503",
+      "mag": 2.57,
+      "latitude": 35.6595,
+      "longitude": -117.5355,
+      "depth": 7.12
+    },
+    {
+      "occurrenceTimeMillis": 1562274175820,
+      "comcatEventID": "ci38444543",
+      "mag": 3.47,
+      "latitude": 35.69,
+      "longitude": -117.4831667,
+      "depth": 7.89
+    },
+    {
+      "occurrenceTimeMillis": 1562274428530,
+      "comcatEventID": "ci38444559",
+      "mag": 2.62,
+      "latitude": 35.5976667,
+      "longitude": -117.598,
+      "depth": 4.93
+    },
+    {
+      "occurrenceTimeMillis": 1562275395060,
+      "comcatEventID": "ci38444687",
+      "mag": 2.81,
+      "latitude": 35.6955,
+      "longitude": -117.4891667,
+      "depth": 2.57
+    },
+    {
+      "occurrenceTimeMillis": 1562275595000,
+      "comcatEventID": "ci38444719",
+      "mag": 2.98,
+      "latitude": 35.6748333,
+      "longitude": -117.5253333,
+      "depth": 9.41
+    },
+    {
+      "occurrenceTimeMillis": 1562275966250,
+      "comcatEventID": "ci38444783",
+      "mag": 2.65,
+      "latitude": 35.7288333,
+      "longitude": -117.5656667,
+      "depth": 7.02
+    },
+    {
+      "occurrenceTimeMillis": 1562276014350,
+      "comcatEventID": "ci38444791",
+      "mag": 3.15,
+      "latitude": 35.617,
+      "longitude": -117.5898333,
+      "depth": 7.45
+    },
+    {
+      "occurrenceTimeMillis": 1562276433420,
+      "comcatEventID": "ci38444823",
+      "mag": 3.44,
+      "latitude": 35.6701667,
+      "longitude": -117.5181667,
+      "depth": 1.78
+    },
+    {
+      "occurrenceTimeMillis": 1562276519890,
+      "comcatEventID": "ci38444847",
+      "mag": 2.82,
+      "latitude": 35.7175,
+      "longitude": -117.5326667,
+      "depth": 3.12
+    },
+    {
+      "occurrenceTimeMillis": 1562276768500,
+      "comcatEventID": "ci37235828",
+      "mag": 2.6,
+      "latitude": 35.5968333,
+      "longitude": -117.596,
+      "depth": 4.67
+    },
+    {
+      "occurrenceTimeMillis": 1562276824370,
+      "comcatEventID": "ci38444903",
+      "mag": 3.25,
+      "latitude": 35.6335,
+      "longitude": -117.606,
+      "depth": 9.67
+    },
+    {
+      "occurrenceTimeMillis": 1562277755060,
+      "comcatEventID": "ci38445015",
+      "mag": 3.44,
+      "latitude": 35.6768333,
+      "longitude": -117.5128333,
+      "depth": 2.88
+    },
+    {
+      "occurrenceTimeMillis": 1562277903210,
+      "comcatEventID": "ci38445039",
+      "mag": 2.78,
+      "latitude": 35.6571667,
+      "longitude": -117.5325,
+      "depth": 8.49
+    },
+    {
+      "occurrenceTimeMillis": 1562277922270,
+      "comcatEventID": "ci37225444",
+      "mag": 3.56,
+      "latitude": 35.7115,
+      "longitude": -117.477,
+      "depth": 1.32
+    },
+    {
+      "occurrenceTimeMillis": 1562278328490,
+      "comcatEventID": "ci38445087",
+      "mag": 4.43,
+      "latitude": 35.7463333,
+      "longitude": -117.5636667,
+      "depth": 5.76
+    },
+    {
+      "occurrenceTimeMillis": 1562279346570,
+      "comcatEventID": "ci38445183",
+      "mag": 2.6,
+      "latitude": 35.7038333,
+      "longitude": -117.4965,
+      "depth": 9.13
+    },
+    {
+      "occurrenceTimeMillis": 1562279407800,
+      "comcatEventID": "ci38445199",
+      "mag": 2.51,
+      "latitude": 35.7025,
+      "longitude": -117.4921667,
+      "depth": 1.47
+    },
+    {
+      "occurrenceTimeMillis": 1562280141780,
+      "comcatEventID": "ci38445295",
+      "mag": 3.23,
+      "latitude": 35.7221667,
+      "longitude": -117.5235,
+      "depth": 4.41
+    },
+    {
+      "occurrenceTimeMillis": 1562281630710,
+      "comcatEventID": "ci38445463",
+      "mag": 2.57,
+      "latitude": 35.7041667,
+      "longitude": -117.4866667,
+      "depth": 1.51
+    },
+    {
+      "occurrenceTimeMillis": 1562281960400,
+      "comcatEventID": "ci38445495",
+      "mag": 3.53,
+      "latitude": 35.6731667,
+      "longitude": -117.4713333,
+      "depth": 9.01
+    },
+    {
+      "occurrenceTimeMillis": 1562281985010,
+      "comcatEventID": "ci38445503",
+      "mag": 3.04,
+      "latitude": 35.7461667,
+      "longitude": -117.5775,
+      "depth": 4.4
+    },
+    {
+      "occurrenceTimeMillis": 1562283240630,
+      "comcatEventID": "ci37420973",
+      "mag": 3.82,
+      "latitude": 35.6623333,
+      "longitude": -117.5245,
+      "depth": 2.61
+    },
+    {
+      "occurrenceTimeMillis": 1562283242380,
+      "comcatEventID": "ci38445703",
+      "mag": 4.04,
+      "latitude": 35.6011667,
+      "longitude": -117.6106667,
+      "depth": 4.75
+    },
+    {
+      "occurrenceTimeMillis": 1562283753830,
+      "comcatEventID": "ci38445751",
+      "mag": 3.72,
+      "latitude": 35.7478333,
+      "longitude": -117.5678333,
+      "depth": 4.36
+    },
+    {
+      "occurrenceTimeMillis": 1562284476390,
+      "comcatEventID": "ci38445839",
+      "mag": 3.39,
+      "latitude": 35.656,
+      "longitude": -117.5233333,
+      "depth": 1.71
+    },
+    {
+      "occurrenceTimeMillis": 1562285645750,
+      "comcatEventID": "ci38445935",
+      "mag": 2.79,
+      "latitude": 35.646,
+      "longitude": -117.5431667,
+      "depth": 1.57
+    },
+    {
+      "occurrenceTimeMillis": 1562285881410,
+      "comcatEventID": "ci38445975",
+      "mag": 4.04,
+      "latitude": 35.7718333,
+      "longitude": -117.6178333,
+      "depth": 2.59
+    },
+    {
+      "occurrenceTimeMillis": 1562286528990,
+      "comcatEventID": "ci38446031",
+      "mag": 2.8,
+      "latitude": 35.719,
+      "longitude": -117.5465,
+      "depth": 6.64
+    },
+    {
+      "occurrenceTimeMillis": 1562286726670,
+      "comcatEventID": "ci38446071",
+      "mag": 4.02,
+      "latitude": 35.7033333,
+      "longitude": -117.4828333,
+      "depth": 1.0
+    },
+    {
+      "occurrenceTimeMillis": 1562286799630,
+      "comcatEventID": "ci38446079",
+      "mag": 2.59,
+      "latitude": 35.7431667,
+      "longitude": -117.5603333,
+      "depth": 5.71
+    },
+    {
+      "occurrenceTimeMillis": 1562287539460,
+      "comcatEventID": "ci38446159",
+      "mag": 3.85,
+      "latitude": 35.6946667,
+      "longitude": -117.5083333,
+      "depth": 6.22
+    },
+    {
+      "occurrenceTimeMillis": 1562287780920,
+      "comcatEventID": "ci38446175",
+      "mag": 2.52,
+      "latitude": 35.7096667,
+      "longitude": -117.4786667,
+      "depth": 1.91
+    },
+    {
+      "occurrenceTimeMillis": 1562288933450,
+      "comcatEventID": "ci38446343",
+      "mag": 3.11,
+      "latitude": 35.7245,
+      "longitude": -117.548,
+      "depth": 1.89
+    },
+    {
+      "occurrenceTimeMillis": 1562289493420,
+      "comcatEventID": "ci38446391",
+      "mag": 3.21,
+      "latitude": 35.6583333,
+      "longitude": -117.5228333,
+      "depth": 1.85
+    },
+    {
+      "occurrenceTimeMillis": 1562291887290,
+      "comcatEventID": "ci38446615",
+      "mag": 2.73,
+      "latitude": 35.7136667,
+      "longitude": -117.4693333,
+      "depth": 1.5
+    },
+    {
+      "occurrenceTimeMillis": 1562292101150,
+      "comcatEventID": "ci38446639",
+      "mag": 3.25,
+      "latitude": 35.7741667,
+      "longitude": -117.6165,
+      "depth": 2.84
+    },
+    {
+      "occurrenceTimeMillis": 1562292119010,
+      "comcatEventID": "ci38446647",
+      "mag": 3.98,
+      "latitude": 35.6401667,
+      "longitude": -117.5461667,
+      "depth": 11.3
+    },
+    {
+      "occurrenceTimeMillis": 1562292319180,
+      "comcatEventID": "ci38446671",
+      "mag": 3.4,
+      "latitude": 35.6555,
+      "longitude": -117.5226667,
+      "depth": 1.93
+    },
+    {
+      "occurrenceTimeMillis": 1562292831870,
+      "comcatEventID": "ci38446767",
+      "mag": 2.63,
+      "latitude": 35.6398333,
+      "longitude": -117.552,
+      "depth": 10.94
+    },
+    {
+      "occurrenceTimeMillis": 1562293181890,
+      "comcatEventID": "ci38446807",
+      "mag": 3.26,
+      "latitude": 35.7726667,
+      "longitude": -117.619,
+      "depth": 2.83
+    },
+    {
+      "occurrenceTimeMillis": 1562293435740,
+      "comcatEventID": "ci38446831",
+      "mag": 2.75,
+      "latitude": 35.7143333,
+      "longitude": -117.4765,
+      "depth": 2.11
+    },
+    {
+      "occurrenceTimeMillis": 1562295589900,
+      "comcatEventID": "ci38447047",
+      "mag": 2.81,
+      "latitude": 35.6576667,
+      "longitude": -117.5225,
+      "depth": 1.55
+    },
+    {
+      "occurrenceTimeMillis": 1562295673280,
+      "comcatEventID": "ci38447055",
+      "mag": 2.76,
+      "latitude": 35.7456667,
+      "longitude": -117.567,
+      "depth": 6.82
+    },
+    {
+      "occurrenceTimeMillis": 1562296518700,
+      "comcatEventID": "ci38447143",
+      "mag": 3.24,
+      "latitude": 35.6298333,
+      "longitude": -117.5661667,
+      "depth": 4.66
+    },
+    {
+      "occurrenceTimeMillis": 1562296793570,
+      "comcatEventID": "ci38447191",
+      "mag": 3.41,
+      "latitude": 35.655,
+      "longitude": -117.5221667,
+      "depth": 1.51
+    },
+    {
+      "occurrenceTimeMillis": 1562296893020,
+      "comcatEventID": "ci38447207",
+      "mag": 2.56,
+      "latitude": 35.7751667,
+      "longitude": -117.6148333,
+      "depth": 2.55
+    },
+    {
+      "occurrenceTimeMillis": 1562297120630,
+      "comcatEventID": "ci38447231",
+      "mag": 2.55,
+      "latitude": 35.69,
+      "longitude": -117.5098333,
+      "depth": 6.52
+    },
+    {
+      "occurrenceTimeMillis": 1562298372700,
+      "comcatEventID": "ci38447383",
+      "mag": 2.58,
+      "latitude": 35.6986667,
+      "longitude": -117.4845,
+      "depth": 1.48
+    },
+    {
+      "occurrenceTimeMillis": 1562298414410,
+      "comcatEventID": "ci38447391",
+      "mag": 3.14,
+      "latitude": 35.6811667,
+      "longitude": -117.5013333,
+      "depth": 1.39
+    },
+    {
+      "occurrenceTimeMillis": 1562298427630,
+      "comcatEventID": "ci37243404",
+      "mag": 2.72,
+      "latitude": 35.7738333,
+      "longitude": -117.6211667,
+      "depth": 2.38
+    },
+    {
+      "occurrenceTimeMillis": 1562298613890,
+      "comcatEventID": "ci38447407",
+      "mag": 2.52,
+      "latitude": 35.711,
+      "longitude": -117.4726667,
+      "depth": 0.71
+    },
+    {
+      "occurrenceTimeMillis": 1562299898570,
+      "comcatEventID": "ci38447591",
+      "mag": 3.53,
+      "latitude": 35.722,
+      "longitude": -117.5545,
+      "depth": 2.02
+    },
+    {
+      "occurrenceTimeMillis": 1562299981140,
+      "comcatEventID": "ci38447599",
+      "mag": 2.62,
+      "latitude": 35.6788333,
+      "longitude": -117.5493333,
+      "depth": 7.09
+    },
+    {
+      "occurrenceTimeMillis": 1562300085300,
+      "comcatEventID": "ci38447623",
+      "mag": 3.56,
+      "latitude": 35.6993333,
+      "longitude": -117.481,
+      "depth": 1.16
+    },
+    {
+      "occurrenceTimeMillis": 1562300129950,
+      "comcatEventID": "ci37243828",
+      "mag": 2.5,
+      "latitude": 35.6325,
+      "longitude": -117.5611667,
+      "depth": 11.57
+    },
+    {
+      "occurrenceTimeMillis": 1562301184900,
+      "comcatEventID": "ci38447727",
+      "mag": 2.61,
+      "latitude": 35.658,
+      "longitude": -117.5233333,
+      "depth": 2.54
+    },
+    {
+      "occurrenceTimeMillis": 1562302565280,
+      "comcatEventID": "ci38447911",
+      "mag": 2.56,
+      "latitude": 35.656,
+      "longitude": -117.5456667,
+      "depth": 7.99
+    },
+    {
+      "occurrenceTimeMillis": 1562302899750,
+      "comcatEventID": "ci38447927",
+      "mag": 2.61,
+      "latitude": 35.5716667,
+      "longitude": -117.6185,
+      "depth": 4.82
+    },
+    {
+      "occurrenceTimeMillis": 1562303437400,
+      "comcatEventID": "ci38447999",
+      "mag": 3.2,
+      "latitude": 35.7058333,
+      "longitude": -117.4781667,
+      "depth": 2.42
+    },
+    {
+      "occurrenceTimeMillis": 1562303905380,
+      "comcatEventID": "ci38448031",
+      "mag": 3.45,
+      "latitude": 35.769,
+      "longitude": -117.614,
+      "depth": 2.55
+    },
+    {
+      "occurrenceTimeMillis": 1562304556000,
+      "comcatEventID": "ci38448071",
+      "mag": 2.62,
+      "latitude": 35.646,
+      "longitude": -117.5845,
+      "depth": 12.55
+    },
+    {
+      "occurrenceTimeMillis": 1562304557480,
+      "comcatEventID": "ci37247972",
+      "mag": 2.67,
+      "latitude": 35.7505,
+      "longitude": -117.535,
+      "depth": 8.88
+    },
+    {
+      "occurrenceTimeMillis": 1562305212150,
+      "comcatEventID": "ci38448143",
+      "mag": 2.81,
+      "latitude": 35.677,
+      "longitude": -117.5118333,
+      "depth": 2.0
+    },
+    {
+      "occurrenceTimeMillis": 1562305958100,
+      "comcatEventID": "ci38448183",
+      "mag": 2.52,
+      "latitude": 35.7036667,
+      "longitude": -117.4831667,
+      "depth": 1.01
+    },
+    {
+      "occurrenceTimeMillis": 1562306963110,
+      "comcatEventID": "ci38448295",
+      "mag": 3.65,
+      "latitude": 35.6228333,
+      "longitude": -117.5716667,
+      "depth": 7.25
+    },
+    {
+      "occurrenceTimeMillis": 1562308842650,
+      "comcatEventID": "ci38448487",
+      "mag": 3.22,
+      "latitude": 35.701,
+      "longitude": -117.5081667,
+      "depth": 6.63
+    },
+    {
+      "occurrenceTimeMillis": 1562309940820,
+      "comcatEventID": "ci38448591",
+      "mag": 2.63,
+      "latitude": 35.7196667,
+      "longitude": -117.5411667,
+      "depth": 4.4
+    },
+    {
+      "occurrenceTimeMillis": 1562309973610,
+      "comcatEventID": "ci38448599",
+      "mag": 2.58,
+      "latitude": 35.6701667,
+      "longitude": -117.4856667,
+      "depth": 6.74
+    },
+    {
+      "occurrenceTimeMillis": 1562310142360,
+      "comcatEventID": "ci38448631",
+      "mag": 3.23,
+      "latitude": 35.7253333,
+      "longitude": -117.5646667,
+      "depth": 2.67
+    },
+    {
+      "occurrenceTimeMillis": 1562311657110,
+      "comcatEventID": "ci38448791",
+      "mag": 3.72,
+      "latitude": 35.7503333,
+      "longitude": -117.5631667,
+      "depth": 6.89
+    },
+    {
+      "occurrenceTimeMillis": 1562312353480,
+      "comcatEventID": "ci38448863",
+      "mag": 3.46,
+      "latitude": 35.688,
+      "longitude": -117.4785,
+      "depth": 10.6
+    },
+    {
+      "occurrenceTimeMillis": 1562313643320,
+      "comcatEventID": "ci38449015",
+      "mag": 2.9,
+      "latitude": 35.7498333,
+      "longitude": -117.5626667,
+      "depth": 6.83
+    },
+    {
+      "occurrenceTimeMillis": 1562314864780,
+      "comcatEventID": "ci38449191",
+      "mag": 3.47,
+      "latitude": 35.6023333,
+      "longitude": -117.6041667,
+      "depth": 4.46
+    },
+    {
+      "occurrenceTimeMillis": 1562316409710,
+      "comcatEventID": "ci38449335",
+      "mag": 2.99,
+      "latitude": 35.6921667,
+      "longitude": -117.4888333,
+      "depth": 9.23
+    },
+    {
+      "occurrenceTimeMillis": 1562316842480,
+      "comcatEventID": "ci38449351",
+      "mag": 3.48,
+      "latitude": 35.704,
+      "longitude": -117.502,
+      "depth": 8.66
+    },
+    {
+      "occurrenceTimeMillis": 1562317880610,
+      "comcatEventID": "ci38449503",
+      "mag": 2.9,
+      "latitude": 35.6663333,
+      "longitude": -117.5276667,
+      "depth": 6.61
+    },
+    {
+      "occurrenceTimeMillis": 1562319989080,
+      "comcatEventID": "ci38449719",
+      "mag": 3.62,
+      "latitude": 35.6496667,
+      "longitude": -117.5481667,
+      "depth": 2.3
+    },
+    {
+      "occurrenceTimeMillis": 1562321794490,
+      "comcatEventID": "ci38449919",
+      "mag": 3.1,
+      "latitude": 35.6636667,
+      "longitude": -117.5026667,
+      "depth": 6.92
+    },
+    {
+      "occurrenceTimeMillis": 1562322437700,
+      "comcatEventID": "ci38449999",
+      "mag": 2.53,
+      "latitude": 35.7245,
+      "longitude": -117.536,
+      "depth": 6.55
+    },
+    {
+      "occurrenceTimeMillis": 1562322797450,
+      "comcatEventID": "ci38450047",
+      "mag": 2.71,
+      "latitude": 35.723,
+      "longitude": -117.5273333,
+      "depth": 4.32
+    },
+    {
+      "occurrenceTimeMillis": 1562324246570,
+      "comcatEventID": "ci38450215",
+      "mag": 2.89,
+      "latitude": 35.7433333,
+      "longitude": -117.5493333,
+      "depth": 10.81
+    },
+    {
+      "occurrenceTimeMillis": 1562324378920,
+      "comcatEventID": "ci38450223",
+      "mag": 3.54,
+      "latitude": 35.602,
+      "longitude": -117.5901667,
+      "depth": 2.82
+    },
+    {
+      "occurrenceTimeMillis": 1562324873040,
+      "comcatEventID": "ci38450263",
+      "mag": 5.37,
+      "latitude": 35.7603333,
+      "longitude": -117.575,
+      "depth": 6.95
+    },
+    {
+      "occurrenceTimeMillis": 1562324920190,
+      "comcatEventID": "ci37260284",
+      "mag": 3.75,
+      "latitude": 35.7575,
+      "longitude": -117.5715,
+      "depth": 7.02
+    },
+    {
+      "occurrenceTimeMillis": 1562325009340,
+      "comcatEventID": "ci38450271",
+      "mag": 3.03,
+      "latitude": 35.755,
+      "longitude": -117.5836667,
+      "depth": 7.0
+    },
+    {
+      "occurrenceTimeMillis": 1562325091810,
+      "comcatEventID": "ci38450279",
+      "mag": 2.84,
+      "latitude": 35.7495,
+      "longitude": -117.572,
+      "depth": 5.01
+    },
+    {
+      "occurrenceTimeMillis": 1562325139080,
+      "comcatEventID": "ci38450287",
+      "mag": 2.71,
+      "latitude": 35.7496667,
+      "longitude": -117.5686667,
+      "depth": 3.88
+    },
+    {
+      "occurrenceTimeMillis": 1562325439560,
+      "comcatEventID": "ci38450295",
+      "mag": 2.52,
+      "latitude": 35.7788333,
+      "longitude": -117.5665,
+      "depth": 7.12
+    },
+    {
+      "occurrenceTimeMillis": 1562325624900,
+      "comcatEventID": "ci38450319",
+      "mag": 2.59,
+      "latitude": 35.7586667,
+      "longitude": -117.5743333,
+      "depth": 7.66
+    },
+    {
+      "occurrenceTimeMillis": 1562325908720,
+      "comcatEventID": "ci38450367",
+      "mag": 2.58,
+      "latitude": 35.6441667,
+      "longitude": -117.5881667,
+      "depth": 8.87
+    },
+    {
+      "occurrenceTimeMillis": 1562326154850,
+      "comcatEventID": "ci38450415",
+      "mag": 3.03,
+      "latitude": 35.7723333,
+      "longitude": -117.57,
+      "depth": 7.3
+    },
+    {
+      "occurrenceTimeMillis": 1562326161530,
+      "comcatEventID": "ci37256244",
+      "mag": 2.64,
+      "latitude": 35.7666667,
+      "longitude": -117.5458333,
+      "depth": 4.29
+    },
+    {
+      "occurrenceTimeMillis": 1562326174080,
+      "comcatEventID": "ci37256252",
+      "mag": 2.8,
+      "latitude": 35.7025,
+      "longitude": -117.4823333,
+      "depth": 1.55
+    },
+    {
+      "occurrenceTimeMillis": 1562326291370,
+      "comcatEventID": "ci38450447",
+      "mag": 2.58,
+      "latitude": 35.7583333,
+      "longitude": -117.581,
+      "depth": 6.91
+    },
+    {
+      "occurrenceTimeMillis": 1562326563920,
+      "comcatEventID": "ci38450511",
+      "mag": 3.19,
+      "latitude": 35.7631667,
+      "longitude": -117.5838333,
+      "depth": 7.91
+    },
+    {
+      "occurrenceTimeMillis": 1562327510760,
+      "comcatEventID": "ci38450631",
+      "mag": 2.64,
+      "latitude": 35.603,
+      "longitude": -117.6043333,
+      "depth": 4.37
+    },
+    {
+      "occurrenceTimeMillis": 1562327929200,
+      "comcatEventID": "ci38450663",
+      "mag": 2.9,
+      "latitude": 35.6478333,
+      "longitude": -117.5836667,
+      "depth": 7.48
+    },
+    {
+      "occurrenceTimeMillis": 1562328310330,
+      "comcatEventID": "ci38450735",
+      "mag": 2.55,
+      "latitude": 35.7526667,
+      "longitude": -117.581,
+      "depth": 6.61
+    },
+    {
+      "occurrenceTimeMillis": 1562329437920,
+      "comcatEventID": "ci38450935",
+      "mag": 3.35,
+      "latitude": 35.7238333,
+      "longitude": -117.5303333,
+      "depth": 2.98
+    },
+    {
+      "occurrenceTimeMillis": 1562329518720,
+      "comcatEventID": "ci38450943",
+      "mag": 2.5,
+      "latitude": 35.7455,
+      "longitude": -117.5656667,
+      "depth": 3.18
+    },
+    {
+      "occurrenceTimeMillis": 1562330238140,
+      "comcatEventID": "ci38451063",
+      "mag": 2.86,
+      "latitude": 35.7185,
+      "longitude": -117.5506667,
+      "depth": 1.64
+    },
+    {
+      "occurrenceTimeMillis": 1562330310020,
+      "comcatEventID": "ci38451079",
+      "mag": 4.09,
+      "latitude": 35.7716667,
+      "longitude": -117.5706667,
+      "depth": 6.82
+    },
+    {
+      "occurrenceTimeMillis": 1562330346080,
+      "comcatEventID": "ci37260292",
+      "mag": 3.11,
+      "latitude": 35.6728333,
+      "longitude": -117.5208333,
+      "depth": 4.58
+    },
+    {
+      "occurrenceTimeMillis": 1562331000450,
+      "comcatEventID": "ci38451175",
+      "mag": 2.59,
+      "latitude": 35.7576667,
+      "longitude": -117.5716667,
+      "depth": 4.47
+    },
+    {
+      "occurrenceTimeMillis": 1562331304830,
+      "comcatEventID": "ci38451239",
+      "mag": 3.65,
+      "latitude": 35.7515,
+      "longitude": -117.5643333,
+      "depth": 7.35
+    },
+    {
+      "occurrenceTimeMillis": 1562332343370,
+      "comcatEventID": "ci38451383",
+      "mag": 2.75,
+      "latitude": 35.762,
+      "longitude": -117.566,
+      "depth": 6.64
+    },
+    {
+      "occurrenceTimeMillis": 1562334063010,
+      "comcatEventID": "ci38451623",
+      "mag": 2.74,
+      "latitude": 35.7055,
+      "longitude": -117.5113333,
+      "depth": 6.91
+    },
+    {
+      "occurrenceTimeMillis": 1562334453490,
+      "comcatEventID": "ci38451671",
+      "mag": 2.61,
+      "latitude": 35.7468333,
+      "longitude": -117.5666667,
+      "depth": 3.52
+    },
+    {
+      "occurrenceTimeMillis": 1562334941040,
+      "comcatEventID": "ci37259684",
+      "mag": 2.62,
+      "latitude": 35.7131667,
+      "longitude": -117.5106667,
+      "depth": 10.56
+    },
+    {
+      "occurrenceTimeMillis": 1562335307650,
+      "comcatEventID": "ci38451775",
+      "mag": 2.55,
+      "latitude": 35.7941667,
+      "longitude": -117.6151667,
+      "depth": 3.98
+    },
+    {
+      "occurrenceTimeMillis": 1562337573450,
+      "comcatEventID": "ci38452095",
+      "mag": 3.94,
+      "latitude": 35.7421667,
+      "longitude": -117.5666667,
+      "depth": 2.89
+    },
+    {
+      "occurrenceTimeMillis": 1562337629910,
+      "comcatEventID": "ci38452103",
+      "mag": 2.76,
+      "latitude": 35.568,
+      "longitude": -117.618,
+      "depth": 3.95
+    },
+    {
+      "occurrenceTimeMillis": 1562338809290,
+      "comcatEventID": "ci38452247",
+      "mag": 2.78,
+      "latitude": 35.6816667,
+      "longitude": -117.595,
+      "depth": 1.25
+    },
+    {
+      "occurrenceTimeMillis": 1562339017600,
+      "comcatEventID": "ci38452271",
+      "mag": 2.76,
+      "latitude": 35.664,
+      "longitude": -117.5273333,
+      "depth": 2.93
+    },
+    {
+      "occurrenceTimeMillis": 1562339537950,
+      "comcatEventID": "ci38452367",
+      "mag": 2.53,
+      "latitude": 35.7436667,
+      "longitude": -117.5598333,
+      "depth": 2.57
+    },
+    {
+      "occurrenceTimeMillis": 1562339943780,
+      "comcatEventID": "ci38452431",
+      "mag": 2.55,
+      "latitude": 35.7215,
+      "longitude": -117.5498333,
+      "depth": 1.55
+    },
+    {
+      "occurrenceTimeMillis": 1562341563860,
+      "comcatEventID": "ci38452607",
+      "mag": 3.0,
+      "latitude": 35.6995,
+      "longitude": -117.4841667,
+      "depth": 1.41
+    },
+    {
+      "occurrenceTimeMillis": 1562346156510,
+      "comcatEventID": "ci38453279",
+      "mag": 3.84,
+      "latitude": 35.6175,
+      "longitude": -117.5796667,
+      "depth": 10.83
+    },
+    {
+      "occurrenceTimeMillis": 1562349432500,
+      "comcatEventID": "ci38453711",
+      "mag": 2.52,
+      "latitude": 35.7176667,
+      "longitude": -117.4728333,
+      "depth": 1.78
+    },
+    {
+      "occurrenceTimeMillis": 1562349596230,
+      "comcatEventID": "ci38453719",
+      "mag": 3.41,
+      "latitude": 35.793,
+      "longitude": -117.615,
+      "depth": 4.01
+    },
+    {
+      "occurrenceTimeMillis": 1562350192600,
+      "comcatEventID": "ci38453815",
+      "mag": 2.7,
+      "latitude": 35.6698333,
+      "longitude": -117.5236667,
+      "depth": 2.78
+    },
+    {
+      "occurrenceTimeMillis": 1562352030990,
+      "comcatEventID": "ci38454007",
+      "mag": 2.62,
+      "latitude": 35.7278333,
+      "longitude": -117.5606667,
+      "depth": 3.93
+    },
+    {
+      "occurrenceTimeMillis": 1562356776980,
+      "comcatEventID": "ci38454567",
+      "mag": 2.76,
+      "latitude": 35.7411667,
+      "longitude": -117.5643333,
+      "depth": 3.08
+    },
+    {
+      "occurrenceTimeMillis": 1562359878710,
+      "comcatEventID": "ci38454919",
+      "mag": 2.74,
+      "latitude": 35.6681667,
+      "longitude": -117.5163333,
+      "depth": 4.68
+    },
+    {
+      "occurrenceTimeMillis": 1562359898360,
+      "comcatEventID": "ci38454927",
+      "mag": 2.64,
+      "latitude": 35.6696667,
+      "longitude": -117.515,
+      "depth": 2.7
+    },
+    {
+      "occurrenceTimeMillis": 1562361217620,
+      "comcatEventID": "ci38455103",
+      "mag": 2.84,
+      "latitude": 35.745,
+      "longitude": -117.5506667,
+      "depth": 7.08
+    },
+    {
+      "occurrenceTimeMillis": 1562361451160,
+      "comcatEventID": "ci38455135",
+      "mag": 2.84,
+      "latitude": 35.7178333,
+      "longitude": -117.525,
+      "depth": 5.05
+    },
+    {
+      "occurrenceTimeMillis": 1562362226070,
+      "comcatEventID": "ci38455199",
+      "mag": 2.75,
+      "latitude": 35.6118333,
+      "longitude": -117.5913333,
+      "depth": 6.93
+    },
+    {
+      "occurrenceTimeMillis": 1562364312050,
+      "comcatEventID": "ci38455447",
+      "mag": 2.78,
+      "latitude": 35.7646667,
+      "longitude": -117.5803333,
+      "depth": 7.51
+    },
+    {
+      "occurrenceTimeMillis": 1562364448320,
+      "comcatEventID": "ci38455463",
+      "mag": 2.78,
+      "latitude": 35.6853333,
+      "longitude": -117.4981667,
+      "depth": 7.13
+    },
+    {
+      "occurrenceTimeMillis": 1562364622660,
+      "comcatEventID": "ci38455487",
+      "mag": 2.54,
+      "latitude": 35.7375,
+      "longitude": -117.5455,
+      "depth": 6.61
+    },
+    {
+      "occurrenceTimeMillis": 1562366303380,
+      "comcatEventID": "ci38455679",
+      "mag": 3.07,
+      "latitude": 35.7755,
+      "longitude": -117.6036667,
+      "depth": 2.5
+    },
+    {
+      "occurrenceTimeMillis": 1562368051430,
+      "comcatEventID": "ci38455903",
+      "mag": 2.66,
+      "latitude": 35.7985,
+      "longitude": -117.6095,
+      "depth": 4.65
+    },
+    {
+      "occurrenceTimeMillis": 1562371859270,
+      "comcatEventID": "ci38456327",
+      "mag": 2.58,
+      "latitude": 35.765,
+      "longitude": -117.5668333,
+      "depth": 6.41
+    },
+    {
+      "occurrenceTimeMillis": 1562371982720,
+      "comcatEventID": "ci38456351",
+      "mag": 3.5,
+      "latitude": 35.7281667,
+      "longitude": -117.5618333,
+      "depth": 3.13
+    },
+    {
+      "occurrenceTimeMillis": 1562372032470,
+      "comcatEventID": "ci38456359",
+      "mag": 2.71,
+      "latitude": 35.7466667,
+      "longitude": -117.5451667,
+      "depth": 10.54
+    },
+    {
+      "occurrenceTimeMillis": 1562372081710,
+      "comcatEventID": "ci38456367",
+      "mag": 2.76,
+      "latitude": 35.771,
+      "longitude": -117.6001667,
+      "depth": 2.62
+    },
+    {
+      "occurrenceTimeMillis": 1562372139130,
+      "comcatEventID": "ci38456375",
+      "mag": 2.93,
+      "latitude": 35.773,
+      "longitude": -117.5983333,
+      "depth": 2.81
+    },
+    {
+      "occurrenceTimeMillis": 1562372337790,
+      "comcatEventID": "ci38456391",
+      "mag": 2.66,
+      "latitude": 35.7703333,
+      "longitude": -117.6176667,
+      "depth": 3.13
+    },
+    {
+      "occurrenceTimeMillis": 1562372407140,
+      "comcatEventID": "ci38456407",
+      "mag": 2.94,
+      "latitude": 35.7431667,
+      "longitude": -117.548,
+      "depth": 9.88
+    },
+    {
+      "occurrenceTimeMillis": 1562374285700,
+      "comcatEventID": "ci38456615",
+      "mag": 3.67,
+      "latitude": 35.7501667,
+      "longitude": -117.5841667,
+      "depth": 6.6
+    },
+    {
+      "occurrenceTimeMillis": 1562374313750,
+      "comcatEventID": "ci38456623",
+      "mag": 2.91,
+      "latitude": 35.6878333,
+      "longitude": -117.486,
+      "depth": 7.69
+    },
+    {
+      "occurrenceTimeMillis": 1562378010770,
+      "comcatEventID": "ci38457015",
+      "mag": 2.75,
+      "latitude": 35.7175,
+      "longitude": -117.5341667,
+      "depth": 4.77
+    },
+    {
+      "occurrenceTimeMillis": 1562379072230,
+      "comcatEventID": "ci38457103",
+      "mag": 2.54,
+      "latitude": 35.6236667,
+      "longitude": -117.5976667,
+      "depth": 8.62
+    },
+    {
+      "occurrenceTimeMillis": 1562379324560,
+      "comcatEventID": "ci38457143",
+      "mag": 2.5,
+      "latitude": 35.7198333,
+      "longitude": -117.5306667,
+      "depth": 6.57
+    },
+    {
+      "occurrenceTimeMillis": 1562380934070,
+      "comcatEventID": "ci38457263",
+      "mag": 2.59,
+      "latitude": 35.5976667,
+      "longitude": -117.588,
+      "depth": 4.27
+    },
+    {
+      "occurrenceTimeMillis": 1562381713090,
+      "comcatEventID": "ci38457343",
+      "mag": 2.8,
+      "latitude": 35.771,
+      "longitude": -117.6008333,
+      "depth": 2.44
+    },
+    {
+      "occurrenceTimeMillis": 1562382992480,
+      "comcatEventID": "ci38457487",
+      "mag": 4.97,
+      "latitude": 35.7253333,
+      "longitude": -117.5535,
+      "depth": 0.88
+    },
+    {
+      "occurrenceTimeMillis": 1562383033500,
+      "comcatEventID": "ci37257780",
+      "mag": 4.14,
+      "latitude": 35.7453333,
+      "longitude": -117.5608333,
+      "depth": 6.5
+    },
+    {
+      "occurrenceTimeMillis": 1562383193040,
+      "comcatEventID": "ci38457511",
+      "mag": 7.1,
+      "latitude": 35.7695,
+      "longitude": -117.5993333,
+      "depth": 8.0,
+      "ruptureSurfaces": [
+        {
+          "outline": [
+            {
+              "latitude": 35.5741994328,
+              "longitude": -117.3707820945,
+              "depth": 0.0
+            },
+            {
+              "latitude": 35.5927834531,
+              "longitude": -117.3980967662,
+              "depth": 0.0
+            },
+            {
+              "latitude": 35.6086552686,
+              "longitude": -117.4139780258,
+              "depth": 0.0
+            },
+            {
+              "latitude": 35.6267094027,
+              "longitude": -117.4332402807,
+              "depth": 0.0
+            },
+            {
+              "latitude": 35.6351681094,
+              "longitude": -117.4477484172,
+              "depth": 0.0
+            },
+            {
+              "latitude": 35.635168109400006,
+              "longitude": -117.4477484172,
+              "depth": 15.0
+            },
+            {
+              "latitude": 35.626709402699994,
+              "longitude": -117.43324028070002,
+              "depth": 15.0
+            },
+            {
+              "latitude": 35.6086552686,
+              "longitude": -117.4139780258,
+              "depth": 15.0
+            },
+            {
+              "latitude": 35.5927834531,
+              "longitude": -117.3980967662,
+              "depth": 15.0
+            },
+            {
+              "latitude": 35.5741994328,
+              "longitude": -117.3707820945,
+              "depth": 15.0
+            },
+            {
+              "latitude": 35.5741994328,
+              "longitude": -117.3707820945,
+              "depth": 0.0
+            }
+          ]
+        },
+        {
+          "outline": [
+            {
+              "latitude": 35.647137561,
+              "longitude": -117.4768565955,
+              "depth": 0.0
+            },
+            {
+              "latitude": 35.673709514,
+              "longitude": -117.5140293653,
+              "depth": 0.0
+            },
+            {
+              "latitude": 35.6880708728,
+              "longitude": -117.5367830318,
+              "depth": 0.0
+            },
+            {
+              "latitude": 35.6993482891,
+              "longitude": -117.5525668245,
+              "depth": 0.0
+            },
+            {
+              "latitude": 35.704447509,
+              "longitude": -117.5582124425,
+              "depth": 0.0
+            },
+            {
+              "latitude": 35.7161200315,
+              "longitude": -117.5672718341,
+              "depth": 0.0
+            },
+            {
+              "latitude": 35.7330783349,
+              "longitude": -117.580861916,
+              "depth": 0.0
+            },
+            {
+              "latitude": 35.7354491409,
+              "longitude": -117.5826751646,
+              "depth": 0.0
+            },
+            {
+              "latitude": 35.7354491409,
+              "longitude": -117.58267516459999,
+              "depth": 15.0
+            },
+            {
+              "latitude": 35.7330783349,
+              "longitude": -117.58086191600002,
+              "depth": 15.0
+            },
+            {
+              "latitude": 35.71612003150001,
+              "longitude": -117.5672718341,
+              "depth": 15.0
+            },
+            {
+              "latitude": 35.704447509,
+              "longitude": -117.55821244250001,
+              "depth": 15.0
+            },
+            {
+              "latitude": 35.6993482891,
+              "longitude": -117.5525668245,
+              "depth": 15.0
+            },
+            {
+              "latitude": 35.688070872800004,
+              "longitude": -117.5367830318,
+              "depth": 15.0
+            },
+            {
+              "latitude": 35.67370951400001,
+              "longitude": -117.5140293653,
+              "depth": 15.0
+            },
+            {
+              "latitude": 35.647137561,
+              "longitude": -117.4768565955,
+              "depth": 15.0
+            },
+            {
+              "latitude": 35.647137561,
+              "longitude": -117.4768565955,
+              "depth": 0.0
+            }
+          ]
+        },
+        {
+          "outline": [
+            {
+              "latitude": 35.7418554538,
+              "longitude": -117.5827218422,
+              "depth": 0.0
+            },
+            {
+              "latitude": 35.7509546198,
+              "longitude": -117.5935664401,
+              "depth": 0.0
+            },
+            {
+              "latitude": 35.7646489192,
+              "longitude": -117.6004057337,
+              "depth": 0.0
+            },
+            {
+              "latitude": 35.7697604433,
+              "longitude": -117.6031393515,
+              "depth": 0.0
+            },
+            {
+              "latitude": 35.7752470078,
+              "longitude": -117.6040792452,
+              "depth": 0.0
+            },
+            {
+              "latitude": 35.7834586784,
+              "longitude": -117.6090834167,
+              "depth": 0.0
+            },
+            {
+              "latitude": 35.7933139887,
+              "longitude": -117.6147752736,
+              "depth": 0.0
+            },
+            {
+              "latitude": 35.8055577086,
+              "longitude": -117.6186895241,
+              "depth": 0.0
+            },
+            {
+              "latitude": 35.8154125005,
+              "longitude": -117.6243841784,
+              "depth": 0.0
+            },
+            {
+              "latitude": 35.8216122107,
+              "longitude": -117.6289276417,
+              "depth": 0.0
+            },
+            {
+              "latitude": 35.8321616032,
+              "longitude": -117.641598301,
+              "depth": 0.0
+            },
+            {
+              "latitude": 35.83216160320001,
+              "longitude": -117.641598301,
+              "depth": 15.0
+            },
+            {
+              "latitude": 35.8216122107,
+              "longitude": -117.6289276417,
+              "depth": 15.0
+            },
+            {
+              "latitude": 35.8154125005,
+              "longitude": -117.6243841784,
+              "depth": 15.0
+            },
+            {
+              "latitude": 35.805557708600006,
+              "longitude": -117.6186895241,
+              "depth": 15.0
+            },
+            {
+              "latitude": 35.79331398870001,
+              "longitude": -117.6147752736,
+              "depth": 15.0
+            },
+            {
+              "latitude": 35.7834586784,
+              "longitude": -117.60908341670002,
+              "depth": 15.0
+            },
+            {
+              "latitude": 35.775247007800004,
+              "longitude": -117.60407924519998,
+              "depth": 15.0
+            },
+            {
+              "latitude": 35.7697604433,
+              "longitude": -117.6031393515,
+              "depth": 15.0
+            },
+            {
+              "latitude": 35.7646489192,
+              "longitude": -117.60040573370001,
+              "depth": 15.0
+            },
+            {
+              "latitude": 35.7509546198,
+              "longitude": -117.5935664401,
+              "depth": 15.0
+            },
+            {
+              "latitude": 35.7418554538,
+              "longitude": -117.5827218422,
+              "depth": 15.0
+            },
+            {
+              "latitude": 35.7418554538,
+              "longitude": -117.5827218422,
+              "depth": 0.0
+            }
+          ]
+        },
+        {
+          "outline": [
+            {
+              "latitude": 35.7384369101,
+              "longitude": -117.5703487519,
+              "depth": 0.0
+            },
+            {
+              "latitude": 35.7177223566,
+              "longitude": -117.5372062823,
+              "depth": 0.0
+            },
+            {
+              "latitude": 35.71772235660001,
+              "longitude": -117.53720628230002,
+              "depth": 15.0
+            },
+            {
+              "latitude": 35.738436910100006,
+              "longitude": -117.57034875190001,
+              "depth": 15.0
+            },
+            {
+              "latitude": 35.7384369101,
+              "longitude": -117.5703487519,
+              "depth": 0.0
+            }
+          ]
+        },
+        {
+          "outline": [
+            {
+              "latitude": 35.7177223566,
+              "longitude": -117.5372062823,
+              "depth": 0.0
+            },
+            {
+              "latitude": 35.713000104,
+              "longitude": -117.5288702531,
+              "depth": 0.0
+            },
+            {
+              "latitude": 35.71300010400001,
+              "longitude": -117.5288702531,
+              "depth": 15.0
+            },
+            {
+              "latitude": 35.71772235660001,
+              "longitude": -117.53720628230002,
+              "depth": 15.0
+            },
+            {
+              "latitude": 35.7177223566,
+              "longitude": -117.5372062823,
+              "depth": 0.0
+            }
+          ]
+        },
+        {
+          "outline": [
+            {
+              "latitude": 35.8359812017,
+              "longitude": -117.6461247737,
+              "depth": 0.0
+            },
+            {
+              "latitude": 35.8556005117,
+              "longitude": -117.6732648716,
+              "depth": 0.0
+            },
+            {
+              "latitude": 35.866886145,
+              "longitude": -117.6843790855,
+              "depth": 0.0
+            },
+            {
+              "latitude": 35.877966777,
+              "longitude": -117.6990931394,
+              "depth": 0.0
+            },
+            {
+              "latitude": 35.8848651931,
+              "longitude": -117.7088254628,
+              "depth": 0.0
+            },
+            {
+              "latitude": 35.884865193100005,
+              "longitude": -117.70882546279998,
+              "depth": 15.0
+            },
+            {
+              "latitude": 35.877966777,
+              "longitude": -117.6990931394,
+              "depth": 15.0
+            },
+            {
+              "latitude": 35.86688614500001,
+              "longitude": -117.6843790855,
+              "depth": 15.0
+            },
+            {
+              "latitude": 35.8556005117,
+              "longitude": -117.67326487160001,
+              "depth": 15.0
+            },
+            {
+              "latitude": 35.8359812017,
+              "longitude": -117.64612477370001,
+              "depth": 15.0
+            },
+            {
+              "latitude": 35.8359812017,
+              "longitude": -117.6461247737,
+              "depth": 0.0
+            }
+          ]
+        },
+        {
+          "outline": [
+            {
+              "latitude": 35.6351681094,
+              "longitude": -117.4477484172,
+              "depth": 0.0
+            },
+            {
+              "latitude": 35.6389256615,
+              "longitude": -117.4569297655,
+              "depth": 0.0
+            },
+            {
+              "latitude": 35.638925661500004,
+              "longitude": -117.4569297655,
+              "depth": 15.0
+            },
+            {
+              "latitude": 35.635168109400006,
+              "longitude": -117.4477484172,
+              "depth": 15.0
+            },
+            {
+              "latitude": 35.6351681094,
+              "longitude": -117.4477484172,
+              "depth": 0.0
+            }
+          ]
+        },
+        {
+          "outline": [
+            {
+              "latitude": 35.647137561,
+              "longitude": -117.4768565955,
+              "depth": 0.0
+            },
+            {
+              "latitude": 35.6380730813,
+              "longitude": -117.4587892553,
+              "depth": 0.0
+            },
+            {
+              "latitude": 35.63807308130001,
+              "longitude": -117.4587892553,
+              "depth": 15.0
+            },
+            {
+              "latitude": 35.647137561,
+              "longitude": -117.4768565955,
+              "depth": 15.0
+            },
+            {
+              "latitude": 35.647137561,
+              "longitude": -117.4768565955,
+              "depth": 0.0
+            }
+          ]
+        },
+        {
+          "outline": [
+            {
+              "latitude": 35.8848651931,
+              "longitude": -117.7088254628,
+              "depth": 0.0
+            },
+            {
+              "latitude": 35.8987339619,
+              "longitude": -117.7196478662,
+              "depth": 0.0
+            },
+            {
+              "latitude": 35.9077349249,
+              "longitude": -117.7360785775,
+              "depth": 0.0
+            },
+            {
+              "latitude": 35.9077349249,
+              "longitude": -117.7360785775,
+              "depth": 15.0
+            },
+            {
+              "latitude": 35.898733961900014,
+              "longitude": -117.7196478662,
+              "depth": 15.0
+            },
+            {
+              "latitude": 35.884865193100005,
+              "longitude": -117.70882546279998,
+              "depth": 15.0
+            },
+            {
+              "latitude": 35.8848651931,
+              "longitude": -117.7088254628,
+              "depth": 0.0
+            }
+          ]
+        },
+        {
+          "outline": [
+            {
+              "latitude": 35.8546704445,
+              "longitude": -117.6719777768,
+              "depth": 0.0
+            },
+            {
+              "latitude": 35.8319985864,
+              "longitude": -117.6536593135,
+              "depth": 0.0
+            },
+            {
+              "latitude": 35.8109309566,
+              "longitude": -117.6423698921,
+              "depth": 0.0
+            },
+            {
+              "latitude": 35.8109309566,
+              "longitude": -117.6423698921,
+              "depth": 15.0
+            },
+            {
+              "latitude": 35.8319985864,
+              "longitude": -117.6536593135,
+              "depth": 15.0
+            },
+            {
+              "latitude": 35.8546704445,
+              "longitude": -117.67197777680002,
+              "depth": 15.0
+            },
+            {
+              "latitude": 35.8546704445,
+              "longitude": -117.6719777768,
+              "depth": 0.0
+            }
+          ]
+        },
+        {
+          "outline": [
+            {
+              "latitude": 35.808357073,
+              "longitude": -117.6398788604,
+              "depth": 0.0
+            },
+            {
+              "latitude": 35.7969461225,
+              "longitude": -117.6232033891,
+              "depth": 0.0
+            },
+            {
+              "latitude": 35.79694612250001,
+              "longitude": -117.62320338910001,
+              "depth": 15.0
+            },
+            {
+              "latitude": 35.808357073,
+              "longitude": -117.6398788604,
+              "depth": 15.0
+            },
+            {
+              "latitude": 35.808357073,
+              "longitude": -117.6398788604,
+              "depth": 0.0
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "cacheDir": "${ETAS_LAUNCHER}/inputs/cache_fm3p1_ba",
+  "fssFile": "${ETAS_LAUNCHER}/inputs/2013_05_10-ucerf3p3-production-10runs_COMPOUND_SOL_FM3_1_SpatSeisU3_MEAN_BRANCH_AVG_SOL.zip",
+  "probModel": "FULL_TD",
+  "applySubSeisForSupraNucl": true,
+  "totRateScaleFactor": 1.29,
+  "gridSeisCorr": true,
+  "timeIndependentERF": false,
+  "griddedOnly": false,
+  "imposeGR": false,
+  "includeIndirectTriggering": true,
+  "gridSeisDiscr": 0.1,
+  "catalogCompletenessModel": "RELAXED",
+  "maxPointSourceMag": 10.0,
+  "configCommand": "u3etas_comcat_event_config_builder.sh --event-id ci38457511 --num-simulations 100000 --days-before 7 --finite-surf-shakemap --finite-surf-shakemap-min-mag 5 --hpc-site USC_CARC --nodes 14 --hours 1 --queue normal",
+  "configTime": 1699462355685,
+  "comcatMetadata": {
+    "region": {
+      "border": [
+        {
+          "latitude": 35.15123745324938,
+          "longitude": -117.46198765392752
+        },
+        {
+          "latitude": 35.170513097218205,
+          "longitude": -117.55046477274733
+        },
+        {
+          "latitude": 35.201997575622634,
+          "longitude": -117.63356287896195
+        },
+        {
+          "latitude": 35.24474776584818,
+          "longitude": -117.70878534540662
+        },
+        {
+          "latitude": 35.2893890362986,
+          "longitude": -117.7638755160312
+        },
+        {
+          "latitude": 35.288830898189985,
+          "longitude": -117.76465036296011
+        },
+        {
+          "latitude": 35.62116745212862,
+          "longitude": -118.13026990137416
+        },
+        {
+          "latitude": 35.621789874646055,
+          "longitude": -118.12940866580139
+        },
+        {
+          "latitude": 35.621789874646055,
+          "longitude": -118.12940866580138
+        },
+        {
+          "latitude": 35.63100857737423,
+          "longitude": -118.14083341711117
+        },
+        {
+          "latitude": 35.69213881200874,
+          "longitude": -118.19401186444136
+        },
+        {
+          "latitude": 35.759827796433385,
+          "longitude": -118.23338865654299
+        },
+        {
+          "latitude": 35.8320329014668,
+          "longitude": -118.25773927868946
+        },
+        {
+          "latitude": 35.906569563076914,
+          "longitude": -118.26628547708222
+        },
+        {
+          "latitude": 35.9811764992231,
+          "longitude": -118.25872343341653
+        },
+        {
+          "latitude": 36.05358395358725,
+          "longitude": -118.23523828089384
+        },
+        {
+          "latitude": 36.12158296055357,
+          "longitude": -118.19650389473806
+        },
+        {
+          "latitude": 36.18309350302806,
+          "longitude": -118.14366730262441
+        },
+        {
+          "latitude": 36.23622937613509,
+          "longitude": -118.07831757407638
+        },
+        {
+          "latitude": 36.279357589115186,
+          "longitude": -118.00243964650828
+        },
+        {
+          "latitude": 36.31115024550475,
+          "longitude": -117.91835419890715
+        },
+        {
+          "latitude": 36.33062704347584,
+          "longitude": -117.82864534929934
+        },
+        {
+          "latitude": 36.337186832826475,
+          "longitude": -117.7360785775
+        },
+        {
+          "latitude": 36.33062704347584,
+          "longitude": -117.64351180570065
+        },
+        {
+          "latitude": 36.31115024550475,
+          "longitude": -117.55380295609284
+        },
+        {
+          "latitude": 36.279357589115186,
+          "longitude": -117.46971750849171
+        },
+        {
+          "latitude": 36.23622937613509,
+          "longitude": -117.39383958092363
+        },
+        {
+          "latitude": 36.1923730176592,
+          "longitude": -117.33990236386252
+        },
+        {
+          "latitude": 36.1923730176592,
+          "longitude": -117.3399023638625
+        },
+        {
+          "latitude": 36.19300476664728,
+          "longitude": -117.33902822340912
+        },
+        {
+          "latitude": 35.858277657147454,
+          "longitude": -116.97410396317103
+        },
+        {
+          "latitude": 35.85771127553969,
+          "longitude": -116.97489025431042
+        },
+        {
+          "latitude": 35.85771127553969,
+          "longitude": -116.97489025431044
+        },
+        {
+          "latitude": 35.849566414597014,
+          "longitude": -116.96491461360324
+        },
+        {
+          "latitude": 35.78805819220281,
+          "longitude": -116.9122967694479
+        },
+        {
+          "latitude": 35.72006106557635,
+          "longitude": -116.87372034968973
+        },
+        {
+          "latitude": 35.64765482528862,
+          "longitude": -116.85032807444419
+        },
+        {
+          "latitude": 35.57304829206068,
+          "longitude": -116.8427916482061
+        },
+        {
+          "latitude": 35.49851117585832,
+          "longitude": -116.8512961557198
+        },
+        {
+          "latitude": 35.42630481575459,
+          "longitude": -116.87553976530553
+        },
+        {
+          "latitude": 35.35861392859174,
+          "longitude": -116.91474809853695
+        },
+        {
+          "latitude": 35.29748137319737,
+          "longitude": -116.96770221389164
+        },
+        {
+          "latitude": 35.24474776584818,
+          "longitude": -117.03277884359336
+        },
+        {
+          "latitude": 35.201997575622634,
+          "longitude": -117.10800131003803
+        },
+        {
+          "latitude": 35.170513097218205,
+          "longitude": -117.19109941625265
+        },
+        {
+          "latitude": 35.15123745324938,
+          "longitude": -117.27957653507247
+        },
+        {
+          "latitude": 35.14474752487352,
+          "longitude": -117.3707820945
+        }
+      ]
+    },
+    "eventID": "ci38457511",
+    "minDepth": -10.0,
+    "maxDepth": 24.0,
+    "minMag": 2.5,
+    "startTime": 1561778393040,
+    "endTime": 1562383193040
+  }
+}
