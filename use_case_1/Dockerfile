@@ -2,7 +2,7 @@
 # Build an Ubuntu installation for UCERF3-ETAS-Launcher
 #
 from ubuntu:jammy
-MAINTAINER Kevin Milner kmilner@usc.edu
+MAINTAINER Philip Maechling maechlin@usc.edu
 
 # Define Build and runtime arguments
 # These accept userid and groupid from the command line
@@ -12,11 +12,12 @@ MAINTAINER Kevin Milner kmilner@usc.edu
 #ARG APP_GID
 #ARG BDATE
 
+# Hardcode the user and userID here for testing
 ENV APP_UNAME=scecuser \
 APP_GRPNAME=scec \
 APP_UID=1000 \
 APP_GID=20 \
-BDATE=20231117
+BDATE=20240222
 
 # Retrieve the userid and groupid from the args so 
 # Define these parameters to support building and deploying on EC2 so user is not root
@@ -29,7 +30,18 @@ RUN apt-get -y upgrade
 ARG DEBIAN_FRONTEND=noninteractive
 ENV TZ=America/Los_Angeles
 
-RUN apt-get install -y build-essential git vim nano emacs default-jdk
+RUN apt-get install -y build-essential git vim nano emacs default-jdk jupyter
+
+RUN apt-get update && apt-get -y upgrade \
+  && apt-get install -y --no-install-recommends \
+    git \
+    wget \
+    g++ \
+    default-jdk \
+    jupyter \
+    libproj-dev proj-data proj-bin libgeos-dev \
+    ca-certificates \
+    && rm -rf /var/lib/apt/lists/*
 
 # Setup Owners
 # Group add duplicates "staff" so just continue if it doesn't work
@@ -38,6 +50,28 @@ RUN useradd -ms /bin/bash -G $APP_GRPNAME --uid $APP_UID $APP_UNAME
 
 #Define interactive user
 USER $APP_UNAME
+
+# Move to the user directory where the gmsvtoolkit is installed and built
+
+ENV PATH="/home/$APP_UNAME/miniconda3/bin:${PATH}"
+ARG PATH="/home/$APP_UNAME/miniconda3/bin:${PATH}"
+
+WORKDIR /home/$APP_UNAME
+
+RUN wget https://repo.anaconda.com/miniconda/Miniconda3-latest-Linux-x86_64.sh \
+    && mkdir /home/$APP_UNAME/.conda \
+    && bash Miniconda3-latest-Linux-x86_64.sh -b \
+    && rm -f Miniconda3-latest-Linux-x86_64.sh \
+    && echo "Running $(conda --version)" \
+    && conda update conda \
+    && conda create -n scec-dev \
+    && conda init bash
+
+RUN echo 'conda activate scec-dev' >> /home/$APP_UNAME/.bashrc \
+    && bash /home/$APP_UNAME/.bashrc \
+    && conda install python=3.10 pip numpy notebook
+
+RUN conda install -c conda-forge jupyterlab jupyterhub
 
 # Get a copy of the UCERF3-ETAS-LAUNCHER repo
 WORKDIR /home/$APP_UNAME
@@ -65,11 +99,11 @@ WORKDIR /home/$APP_UNAME/target
 #
 # Add metadata to dockerfile using labels
 LABEL "org.scec.project"="UCERF3-ETAS"
-LABEL org.scec.responsible_person="Kevin Milner"
-LABEL org.scec.primary_contact="kmilner@usc.edu"
+LABEL org.scec.responsible_person="Phil Maechling"
+LABEL org.scec.primary_contact="maechlin@usc.edu"
 LABEL version="$BDATE"
-
 #
 # Start Bash Terminal Window
 WORKDIR /home/$APP_UNAME
-ENTRYPOINT ["/bin/bash"]
+#ENTRYPOINT ["/bin/bash"]
+ENTRYPOINT ["/usr/bin/jupyter","lab","--ip=0.0.0.0","--notebook-dir=/home/scecuser","--allow-root","--no-browser"]
