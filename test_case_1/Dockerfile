@@ -106,4 +106,4 @@ LABEL version="$BDATE"
 # Start Bash Terminal Window
 WORKDIR /home/$APP_UNAME
 #ENTRYPOINT ["/bin/bash"]
-ENTRYPOINT ["/usr/bin/jupyter","lab","--ip=0.0.0.0","--notebook-dir=/home/scecuser","--allow-root","--no-browser"]
+ENTRYPOINT ["/usr/bin/jupyter","lab","--ip=0.0.0.0","--notebook-dir=/home/$APP_UNAME","--allow-root","--no-browser"]
