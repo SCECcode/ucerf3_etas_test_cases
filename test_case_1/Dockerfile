@@ -12,6 +12,7 @@ MAINTAINER Philip Maechling maechlin@usc.edu
 #ARG APP_GID
 #ARG BDATE
 
+# The following ENV set the username for this testcase: scecuser
 # Hardcode the user and userID here for testing
 ENV APP_UNAME=scecuser \
 APP_GRPNAME=scec \
@@ -104,6 +105,8 @@ LABEL org.scec.primary_contact="maechlin@usc.edu"
 LABEL version="$BDATE"
 #
 # Start Bash Terminal Window
+# For prototyping, this repeats the username for this testcase as: scecuser
+# Consolidate these usages to 1 when possible.
 WORKDIR /home/$APP_UNAME
 #ENTRYPOINT ["/bin/bash"]
-ENTRYPOINT ["/usr/bin/jupyter","lab","--ip=0.0.0.0","--notebook-dir=/home/$APP_UNAME","--allow-root","--no-browser"]
+ENTRYPOINT ["/usr/bin/jupyter","lab","--ip=0.0.0.0","--notebook-dir=/home/scecuser","--allow-root","--no-browser"]
