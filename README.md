@@ -52,7 +52,11 @@ Memory at end of simultation
 [19:14:24.837 (pool-1-thread-1)]: completed 9 (4443 ruptures)
 [19:14:24.888 (main)]: done with 10 simulations in 5.177117 minute
 </pre>
-
+Or another run
+<pre>
+[23:07:27.979 (pool-1-thread-2)]: completed 9 (4443 ruptures)
+[23:07:28.148 (main)]: done with 10 simulations in 7.6860166 minutes
+</pre>
 
 $ u3etas_plot_generator.sh target/test_case_1/config.json
 <pre>
