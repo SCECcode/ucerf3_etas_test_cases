@@ -20,5 +20,8 @@ To run a set of ETAS simulations on a single machine (but possibly with multiple
 # Storage Requirements
 
 * After creating configuration file: 1.2M
-* After running simulation: 9.1M
-* After generating all plots: 40M
+* After running 10 simulation: 9.1M
+* After generating all 10 plots: 40M
+
+* After 1000 examples simulation: 922MB data storage
+  
