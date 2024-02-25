@@ -17,10 +17,14 @@ To run the test case, start the docker image. Go to ucerf3_etas_test_cases/test_
 These are the three commands that should work in the container:
 However, on the second one is required because the required config.json file has been created and can be run directory.
 Also, the benchmark measured on Expanse will not to the plotting because it depends on external system response (opensha - server).
+These configurations assume that their is a relative directory ./target
+If you are starting a docker image from a directory, make sure there is a subdirectroy called target. That subdirectory will be mounted in the image, and it is the place where the outputs created by this program are saved on disk, even after the container that created them is gone.
+
 ````
-$ u3etas_comcat_event_config_builder.sh --event-id ci38457511 --num-simulations 10 --days-before 7 --finite-surf-shakemap --finite-surf-shakemap-min-mag 5 --output-dir ucerf3_etas_test_cases/test_case_1 --random-seed 123456789
-$ u3etas_launcher.sh ucerf3_etas_test_cases/test_case_1/config.json
-$ u3etas_plot_generator.sh ucerf3_etas_test_cases/test_case_1/config.json
+$ u3etas_comcat_event_config_builder.sh --event-id ci38457511 --num-simulations 10 --days-before 7 --finite-surf-shakemap --finite-surf-shakemap-min-mag 5 --output-dir target/test_case_1 --random-seed 123456789
+$ u3etas_launcher.sh target/test_case_1/config.json
+$ u3etas_plot_generator.sh target/test_case_1/config.json
+
 ````
 # Use Case 2:
 This is a single node example of UCERF3-ETAS simulations. 
