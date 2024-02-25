@@ -77,13 +77,14 @@ RUN conda install -c conda-forge jupyterlab jupyterhub
 # Get a copy of the UCERF3-ETAS-LAUNCHER repo
 WORKDIR /home/$APP_UNAME
 RUN git clone https://github.com/opensha/ucerf3-etas-launcher.git
+RUN git clone https://github.com/sceccode/ucerf3_etas_test_cases.git
 
-WORKDIR /home/$APP_UNAME
-RUN mkdir -p ucerf3-etas-simulations
+#WORKDIR /home/$APP_UNAME
+#RUN mkdir -p ucerf3-etas-simulations
 
 # Setup UCERF3-ETAS environment variables
 ENV ETAS_LAUNCHER=/home/$APP_UNAME/ucerf3-etas-launcher
-ENV ETAS_SIM_DIR=/home/$APP_UNAME/ucerf3-etas-simulations
+ENV ETAS_SIM_DIR=/home/$APP_UNAME/ucerf3_etas_test_cases/test_case_1
 ENV PATH="$PATH:$ETAS_LAUNCHER/sbin"
 
 # Build UCERF3-ETAS
