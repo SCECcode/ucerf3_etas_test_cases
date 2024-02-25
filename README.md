@@ -55,6 +55,36 @@ Memory at end of simultation
 
 
 $ u3etas_plot_generator.sh target/test_case_1/config.json
+<pre>
+(scec-dev) scecuser@d63902550175:~$ u3etas_plot_generator.sh target/test_case_1/config.json
+ETAS_MEM_GB is not set, will automatically detect maximum memory as 80% of total system memory
+     will use up to 12 GB of memory
+Checking for updates to OpenSHA. You can disable these checks by setting the environmental variable ETAS_JAR_DISABLE_UPDATE=1
+Checking for git updates in /home/scecuser/ucerf3-etas-launcher/opensha/git/opensha
+        On branch: etas-launcher-stable
+Fetching origin
+Up-to-date
+Path ('${ETAS_LAUNCHER}/inputs/cache_fm3p1_ba') contains environmental variable ('ETAS_LAUNCHER')
+        replacing '${ETAS_LAUNCHER}' with '/home/scecuser/ucerf3-etas-launcher': /home/scecuser/ucerf3-etas-launcher/inputs/cache_fm3p1_ba
+Catalogs file/dir not specififed, searching for catalogs...
+Using results dir: /home/scecuser/target/test_case_1/results
+[19:16:04.335 (main)]: Simulation start time (epoch milliseconds): 1562383194040
+[19:16:04.353 (main)]: Simulation start date: 2019/07/06 03:19:54 UTC
+[19:16:04.394 (main)]: Setting maximum point source mag: 10.0
+[19:16:06.788 (main)]: Simulation name: ComCat M7.1 (ci38457511), ShakeMap Surfaces
+[19:16:06.875 (main)]: determining random seeds from input seed=123456789
+Has any triggers? true  Has non-hist triggers? true     Annualize MFD? false
+ComCat map grid spacing: 0.02 for minSpan=1.1924393
+Current duration from start time: 4.64065
+Max comcat compare duration: 4.64065
+https://earthquake.usgs.gov/fdsnws/event/1/query?endtime=2024-02-25T03:16:08.179Z&format=geojson&limit=20000&maxdepth=24.000&maxlatitude=36.33719&maxlongitude=-116.84279&mindepth=-10.000&minlatitude=35.14475&minlongitude=-118.26629&minmagnitude=2.500&orderby=time&starttime=2019-07-06T03:19:54.040Z
+Count of events received = 2865
+Count of events after filtering = 2835
+Events filtered due to conversion = 0, location = 30, id = 0
+Total number of events returned = 2835
+Min ComCat mag: 2.5
+[19:16:14.226 (main)]: Loading a new Fault System Solution from /home/scecuser/ucerf3-etas-launcher/inputs/2013_05_10-ucerf3p3-production-10runs_COMPOUND_SOL_FM3_1_SpatSeisU3_MEAN_BRANCH_AVG_SOL.zip
+</pre>
 
 ````
 # Use Case 2:
