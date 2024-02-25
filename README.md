@@ -23,6 +23,37 @@ If you are starting a docker image from a directory, make sure there is a subdir
 ````
 $ u3etas_comcat_event_config_builder.sh --event-id ci38457511 --num-simulations 10 --days-before 7 --finite-surf-shakemap --finite-surf-shakemap-min-mag 5 --output-dir target/test_case_1 --random-seed 123456789
 $ u3etas_launcher.sh target/test_case_1/config.json
+
+<pre>
+[19:09:12.971 (main)]: Simulation start time (epoch milliseconds): 1562383194040
+[19:09:12.984 (main)]: Simulation start date: 2019/07/06 03:19:54 UTC
+[19:09:13.013 (main)]: Setting maximum point source mag: 10.0
+[19:09:13.877 (main)]: Simulation name: ComCat M7.1 (ci38457511), ShakeMap Surfaces
+[19:09:13.991 (main)]: determining random seeds from input seed=123456789
+[19:09:14.173 (main)]: max mem MB: 12288
+[19:09:14.175 (main)]: max threads calculated from max mem & available procs: 2
+[19:09:14.230 (main)]: starting 10 simulations with 2 threads
+</pre>
+
+<pre>
+[19:14:12.850 (pool-1-thread-2)]: completed 8 (5447 ruptures)
+Memory after loop:
+        in use memory: 8,045,007
+        free memory: 4,535,856
+        allocated memory: 12,580,864
+        max memory: 12,582,912
+        total free memory: 4,537,904
+Memory at end of simultation
+        in use memory: 8,045,007
+        free memory: 4,535,856
+        allocated memory: 12,580,864
+        max memory: 12,582,912
+        total free memory: 4,537,904
+[19:14:24.837 (pool-1-thread-1)]: completed 9 (4443 ruptures)
+[19:14:24.888 (main)]: done with 10 simulations in 5.177117 minute
+</pre>
+
+
 $ u3etas_plot_generator.sh target/test_case_1/config.json
 
 ````
