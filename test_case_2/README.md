@@ -7,6 +7,13 @@ This test case 2.1 is defined to be the ucerf3 catalog creation, but not the plo
 As a N=10000 catalog run. It currently takes around 3 hours to run on one Expanse CPU nodes, using 20 Threads and 10Gb per thread RAM. 
 A end-user test case which produced a proactical deliverable, will add the plotting stage. This requires the opensha.org server operating during the test. Ifthe plotting script is invoked and all plots will be generated in a 'plots' folder.
 
+# installation
+To build the opensha jar file, the Expanse head node does not allow enough memory to build this jar. To build it before running the simulations, you can request an interactive node and build it on the node before you run the simulations
+
+<pre>
+srun --partition=debug  --pty --account=ddp409 --nodes=1 --ntasks-per-node=4 \
+    --mem=20G -t 00:30:00 --wait=0 --export=ALL /bin/bash
+</pre>
 # Storage Requirements
 
 * Input file size: 81kb
