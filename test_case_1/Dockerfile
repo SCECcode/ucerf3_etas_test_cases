@@ -84,7 +84,7 @@ RUN git clone https://github.com/sceccode/ucerf3_etas_test_cases.git
 
 # Setup UCERF3-ETAS environment variables
 ENV ETAS_LAUNCHER=/home/$APP_UNAME/ucerf3-etas-launcher
-ENV ETAS_SIM_DIR=/home/$APP_UNAME/ucerf3_etas_test_cases/test_case_1
+ENV ETAS_SIM_DIR=/home/$APP_UNAME/target
 ENV PATH="$PATH:$ETAS_LAUNCHER/sbin"
 
 # Build UCERF3-ETAS
