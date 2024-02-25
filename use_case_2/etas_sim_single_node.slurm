@@ -1,28 +1,29 @@
 #!/bin/bash
-
-#SBATCH -t 3:00:00
-#SBATCH --nodes 1
-#SBATCH -n 128
-#SBATCH --mem=249325M
-#SBATCH --partition compute
+#SBATCH -t 04:00:00
+#SBATCH --nodes=1
+#SBATCH --ntasks-per-node=10
+#SBATCH --mem=200G
+#SBATCH --partition=compute
 #SBATCH --account=ddp408
-
+#SBATCH --output=R-%x.%j.out
+#SBATCH --error=R-%x.%j.err
+#SBATCH --mail-user maechlin@usc.edu
+#SBATCH --mail-type=ALL
+#SBATCH --get-user-env
 ######################
 ## INPUT PARAMETERS ##
 ######################
-
 ## ETAS PARAMETERS ##
 
 # path to the JSON configuration file
-ETAS_CONF_JSON="${ETAS_SIM_DIR}/scenario_2/config.json"
+ETAS_CONF_JSON="${ETAS_SIM_DIR}/test_case_2/config.json"
 
 ## JAVA/MPJ PARAMETERS ##
-
 # maxmimum memory in gigabytes. should be close to, but not over, total memory available
 MEM_GIGS=200
 
 # number of etas threads. should be approximately MEM_GIGS/5, and no more than the total number of threads available
-THREADS=20
+THREADS=10
 
 # path to the opensha-ucerf3 jar file
 JAR_FILE=${ETAS_LAUNCHER}/opensha/opensha-all.jar
