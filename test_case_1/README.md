@@ -1,11 +1,12 @@
 # Test Case 1
-This is a ucerf3 etas test case for a laptop scale computer. This test case is run from a Docker image to simply distribution of opensha codes.
+This is a ucerf3 etas test case for a laptop scale computer. 
+This will test basic ETAS simulation capabilities using opensha codes, and run the same simulations on different machines, configuration the same simulation but a different number of catalogs, on different system configurations from laptop to multi-node supercompter.
 
 # Steps for running the tutorial UCERF3-ETAS simulation inside the Docker container
-
-* u3etas_comcat_event_config_builder.sh --event-id ci38457511 --num-simulations 10 --days-before 7 --finite-surf-shakemap --finite-surf-shakemap-min-mag 5 --output-dir ucerf3-etas-simulations/comcat-ridgecrest-m7.1-example --random-seed 123456789
-* u3etas_launcher.sh ucerf3-etas-simulations/comcat-ridgecrest-m7.1-example/config.json
-* u3etas_plot_generator.sh ucerf3-etas-simulations/comcat-ridgecrest-m7.1-example/config.json
+This initial test case is assume to run in a Docker subdirectory on a laptop. The subdirectory where this sceccode/ucerf3_jup image is started, should have a subdirectory called target. This subdirectory will be mounted in the container and will be the location for the results to be written, and then visible from both the container, and from the laptop after the container exists.
+* u3etas_comcat_event_config_builder.sh --event-id ci38457511 --num-simulations 10 --days-before 7 --finite-surf-shakemap --finite-surf-shakemap-min-mag 5 --output-dir ../target/comcat-ridgecrest-m7.1-example --random-seed 123456789
+* u3etas_launcher.sh ../target/comcat-ridgecrest-m7.1-example/config.json
+* u3etas_plot_generator.sh ../target/comcat-ridgecrest-m7.1-example/config.json
 
 # Examples
 
