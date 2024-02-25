@@ -1,4 +1,4 @@
-# Use case #2
+# Test case #2
 
 This use case runs 10k simulations on a single node. 
 This test case generates etas catalogs after the Ridgecrest M7.1.
