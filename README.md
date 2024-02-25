@@ -89,9 +89,15 @@ Min ComCat mag: 2.5
 ````
 # Use Case 2:
 This is a single node example of UCERF3-ETAS simulations. 
-This contains a slurm script that is configured to run on a single node SDSC Expanse. This example produces 10000 catalogs and it will take several hours on a multiple cores of a single node on SDSC. 
-It uses a single Expanse Node (w/ 128 cores and 256G Ram) and it uses Java threads and memory requirements (10GB per cpu). A threaded calculation, with too little RAM/thread (cpu) may start up, generate some catalogs, then exits on out of memory. On expanse this has happened when trying to run with less than 8GB/thread.
-
+This contains a slurm script that is configured to run on a single node SDSC Expanse. This example produces 10000 catalogs.
+It took ~3.2 hours on a single node on SDSC Expanses (w/ 128 cores and 256G Ram) and it uses inputs a Java threads and memory requirements (10GB per cpu) at starttime. 
+A threaded calculation, with too little RAM/thread (cpu) may start up, generate some catalogs, then exits on out of memory. On expanse this has happened when trying to run with less than 8GB/thread.
+When both the catalog generations and the plotting has run, the results are:
+<pre>
+(base) [ux454496@login02 ucerf3_etas_test_cases]$ du -sh test_2_ridgecrest_m71_results/
+6.3G    test_2_ridgecrest_m71_results/
+</pre>
+        
 # Use Case 3:
 This is a multi-node example of UCERF3-ETAS. This contains a slurm script that is configured to run on multiple nodes on SDSC Expanse. This example produces 10000 catalogs and it will complete within 1 hour on 14 nodes on SDSC Expanse. It is multi-threaded and requires a Java-MPI libraries.
 
