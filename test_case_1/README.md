@@ -3,8 +3,8 @@ This is a ucerf3 etas test case for a laptop scale computer. This test case is r
 
 # Steps for running the tutorial UCERF3-ETAS simulation inside the Docker container
 
-* u3etas_comcat_event_config_builder.sh --event-id ci38457511 --num-simulations 10 --days-before 7 --finite-surf-shakemap --finite-surf-shakemap-min-mag 5 --output-dir target/comcat-ridgecrest-m7.1-example --random-seed 123456789
-* u3etas_launcher.sh target/comcat-ridgecrest-m7.1-example/config.json
+* u3etas_comcat_event_config_builder.sh --event-id ci38457511 --num-simulations 10 --days-before 7 --finite-surf-shakemap --finite-surf-shakemap-min-mag 5 --output-dir ../target/comcat-ridgecrest-m7.1-example --random-seed 123456789
+* u3etas_launcher.sh ../target/comcat-ridgecrest-m7.1-example/config.json
 * u3etas_plot_generator.sh target/comcat-ridgecrest-m7.1-example/config.json
 
 # Examples
