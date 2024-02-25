@@ -1,8 +1,9 @@
 # Test case #2
-
-This use case runs 10k simulations on a single node. 
-This test case generates etas catalogs after the Ridgecrest M7.1.
-It uses a copy of the Comcat catalog, and forecasts annual earthquake forecasts for the next 10 years. The forecasts are based on statistical summary of a suite of alternative forecasts, with N being the number of alternative possible catalogs calculated. 
+<pre>
+This Test Case runs 10k simulations on a single node. 
+This test case generates ETAS catalogs after the Ridgecrest M7.1.
+It uses a copy of the Comcat catalog, and forecasts annual earthquake forecasts for the next 10 years.
+This m
 This test case 2.1 is defined to be the ucerf3 catalog creation, but not the plotting, because the plotting stages depend on the performance of external systems, specifically a data server at USC.
 As a N=10000 catalog run. It currently takes around 3 hours to run on one Expanse CPU nodes, using 20 Threads and 10Gb per thread RAM. 
 A end-user test case which produced a proactical deliverable, will add the plotting stage. This requires the opensha.org server operating during the test. Ifthe plotting script is invoked and all plots will be generated in a 'plots' folder.
@@ -13,6 +14,15 @@ To build the opensha jar file, the Expanse head node does not allow enough memor
 <pre>
 srun --partition=debug  --pty --account=ddp409 --nodes=1 --ntasks-per-node=4 \
     --mem=20G -t 00:30:00 --wait=0 --export=ALL /bin/bash
+
+</pre>
+Then, build with either the update or the test commands
+<pre>
+# Build UCERF3-ETAS
+WORKDIR /home/$APP_UNAME
+sbin/u3etas_opensha_update.sh -d
+or
+sbin/u3etas_env_test.sh
 </pre>
 # Storage Requirements
 
