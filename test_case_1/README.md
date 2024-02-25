@@ -6,6 +6,15 @@
 
 * u3etas_plot_generator.sh ucerf3-etas-simulations/comcat-ridgecrest-m7.1-example/config.json
 
+# Examples
+
+Once you have defined a JSON ETAS configuration file, you can use the scripts in the sbin directory. More detailed information on these scripts is available in the README. Commands shown below assume that you have added the sbin direcotory to your PATH.
+
+To run a set of ETAS simulations on a single machine (but possibly with multiple threads), use the u3etas_launcher.sh command:
+* u3etas_launcher.sh [--threads <num-threads>] </path/to/etas_configuration.json>
+* For example, to run ETAS simulations for a JSON file in the current directory named "config.json" with 3 threads:
+* u3etas_launcher.sh --threads 3 config.json
+
 # Storage Requirements
 
 * After creating configuration file: 1.2M
