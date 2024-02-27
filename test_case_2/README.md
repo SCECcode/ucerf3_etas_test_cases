@@ -1,18 +1,38 @@
 # Test case #2
 This test case runs the same ETAS Simulation with 10000 catalogs on a single Expanse Node.
 The scripts to generate the generate the configuration file, and run the launcher are similar to the test case 1 commands.
-````
-$ u3etas_comcat_event_config_builder.sh --event-id ci38457511 --num-simulations 10 --days-before 7 --finite-surf-shakemap --finite-surf-shakemap-min-mag 5 --output-dir test_case_2 --random-seed 123456789
-$ u3etas_launcher.sh target/test_case_2/config.json
-````
+Define a path to the lustre file system.
+SET .bashrc to define ENV
+<pre>
+    # User specific aliases and functions for bbp
+#module load cpu/0.15.4
+#module load gcc/9.2.0
+# Common module loads
+module load slurm
+module load sdsc
+export ETAS_MEM_GB=20
+export ETAS_LAUNCHER=/expanse/lustre/projects/ddp408/ux454496/ucerf3_etas_test_cases/ucerf3-etas-launcher
+export ETAS_THREADS=10
+export ETAS_SIM_DIR=/expanse/lustre/projects/ddp408/ux454496/ucerf3_etas_test_cases
+export PATH=$PATH:$ETAS_LAUNCHER/parallel/slurm_sbin:$ETAS_LAUNCHER/sbin/
+</pre>
+$ git clone htttps://github.com/sceccode/ucerf3_etas_test_cases.git
+From there run the script to generate the test_case_2/config.json file.
 
+````
+$ u3etas_comcat_event_config_builder.sh --event-id ci38457511 --num-simulations 10000 --days-before 7 --finite-surf-shakemap --finite-surf-shakemap-min-mag 5 --output-dir test_case_2 --random-seed 123456789
+
+````
+Then move into the test_case_2/ and submit the config to the batch system.
+````
+$ sbatch etas_sim_single_node.slurm
+````
 
 <pre>
-This Test Case runs 10k simulations on a single node. 
-This test case generates ETAS catalogs after the Ridgecrest M7.1.
-It uses a copy of the Comcat catalog, and forecasts annual earthquake forecasts for the next 10 years.
-This m
-This test case 2.1 is defined to be the ucerf3 catalog creation, but not the plotting, because the plotting stages depend on the performance of external systems, specifically a data server at USC.
+Test Case 2 runs UCERF3-ETAS simulations generate 10 year earthquake catalogs based on the Ridgecrest M7.1 main shock. The test case runs on a single Expanse CPU node. It generates 10 year ETAS catalogs after the Ridgecrest M7.1. It uses a copy of the Comcat catalog, and forecasts annual earthquake forecasts for the next 10 years. The default test case generates 10000 alternative 10 year earthquake catalogs.
+
+Test case 2.1 is defined to be the ucerf3 catalog creation processing stage. User-oriented etas products include the catalog generation, and plotting scripts to help summarize the results. The plotting scripts stage of the processing depend on the performance of external systems (non-ACCESS data servers) so plotting is excluded from this as a scaling performance test case.
+
 As a N=10000 catalog run. It currently takes around 3 hours to run on one Expanse CPU nodes, using 20 Threads and 10Gb per thread RAM. 
 A end-user test case which produced a proactical deliverable, will add the plotting stage. This requires the opensha.org server operating during the test. Ifthe plotting script is invoked and all plots will be generated in a 'plots' folder.
 
