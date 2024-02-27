@@ -2,8 +2,8 @@
 This test case runs the same ETAS Simulation with 10000 catalogs on a single Expanse Node.
 The scripts to generate the generate the configuration file, and run the launcher are similar to the test case 1 commands.
 ````
-$ u3etas_comcat_event_config_builder.sh --event-id ci38457511 --num-simulations 10 --days-before 7 --finite-surf-shakemap --finite-surf-shakemap-min-mag 5 --output-dir target/test_case_2 --random-seed 123456789
-$ u3etas_launcher.sh target/test_case_1/config.json
+$ u3etas_comcat_event_config_builder.sh --event-id ci38457511 --num-simulations 10 --days-before 7 --finite-surf-shakemap --finite-surf-shakemap-min-mag 5 --output-dir test_case_2 --random-seed 123456789
+$ u3etas_launcher.sh target/test_case_2/config.json
 ````
 
 
@@ -20,7 +20,7 @@ A end-user test case which produced a proactical deliverable, will add the plott
 To build the opensha jar file, the Expanse head node does not allow enough memory to build this jar. To build it before running the simulations, you can request an interactive node and build it on the node before you run the simulations
 
 <pre>
-srun --partition=debug  --pty --account=ddp409 --nodes=1 --ntasks-per-node=4 \
+srun --partition=debug  --pty --account=ddp408 --nodes=1 --ntasks-per-node=4 \
     --mem=20G -t 00:30:00 --wait=0 --export=ALL /bin/bash
 
 </pre>
