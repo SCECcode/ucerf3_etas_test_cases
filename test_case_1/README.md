@@ -1,12 +1,32 @@
 # Test Case 1
-This is a ucerf3 etas test case for a laptop scale computer. 
-This will test basic ETAS simulation capabilities using opensha codes, and run the same simulations on different machines, configuration the same simulation but a different number of catalogs, on different system configurations from laptop to multi-node supercompter.
+This is a ucerf3 etas test case for a laptop scale computer using opensha code. OpenSha provides an ETAS simulation test case that generates ETAS catalogs for 10 years after the Ridgecrest M7.1 Main Shock. This can provide a performance test case for presumably speeding up as it runs on more cores. Current scale is 10,000 Catalog generation is the reference case. This calculation is expected to take 8 hour+ on a laptop. It can be computed in less time on multi-core and multi-node supercompters.
 
 # Steps for running the tutorial UCERF3-ETAS simulation inside the Docker container
 This initial test case is assume to run in a Docker subdirectory on a laptop. The subdirectory where this sceccode/ucerf3_jup image is started, should have a subdirectory called target. This subdirectory will be mounted in the container and will be the location for the results to be written, and then visible from both the container, and from the laptop after the container exists.
-* u3etas_comcat_event_config_builder.sh --event-id ci38457511 --num-simulations 10 --days-before 7 --finite-surf-shakemap --finite-surf-shakemap-min-mag 5 --output-dir ../target/comcat-ridgecrest-m7.1-example --random-seed 123456789
-* u3etas_launcher.sh ../target/comcat-ridgecrest-m7.1-example/config.json
-* u3etas_plot_generator.sh ../target/comcat-ridgecrest-m7.1-example/config.json
+
+# Start as Juptyer lab
+Run the Docker image and it will present a url on the screen. Post that url into a browser, and it presents the Jupyter Lab interface which includes a terminal window.
+
+Open a terminal window in Jupyter lab.
+<pre>
+$ pwd
+/home/scecuser
+$ ls
+miniconda3  target  ucerf3-etas-launcher  ucerf3_etas_test_cases
+</pre>
+
+From this home directory, run config builder, then run test_case_1 with the launcher. The outputs will be written to target/results.
+````
+* u3etas_comcat_event_config_builder.sh --event-id ci38457511 --num-simulations 10000 --days-before 7 --finite-surf-shakemap --finite-surf-shakemap-min-mag 5 --output-dir target/comcat-ridgecrest-m7.1-example --random-seed 123456789
+````
+Then, from the same home directory:
+````
+* u3etas_launcher.sh target/comcat-ridgecrest-m7.1-example/config.json
+````
+Then plot the results as needed:
+````
+* u3etas_plot_generator.sh target/comcat-ridgecrest-m7.1-example/config.json
+````
 
 # Examples
 
