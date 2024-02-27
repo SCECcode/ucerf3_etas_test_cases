@@ -7,7 +7,7 @@ This directory contains three use case examples for UCERF3-ETAS for Quakeworx.
 The first test case is an 10 year ETAS forecast using the Ridgecreset earthquake catalog leading up to the M7.1. The default benchmark is 10,000 catalogs, but that might take 8 hours or longer on a laptop.
 
 # Test Case 2:
-This is a single node example of UCERF3-ETAS simulations with 10,000 catalogs. The simulation configuration file is generated using the same input parameters except the number of catalogs configured to run on a Expanse compute, and not on a laptop. By dividing up the catalog generation onto multiple cores on an Expanse node, the time required to generate the catalogs is expected to decrease. This test case 2 repo contains a slurm script that is configured to run on a single node SDSC Expanse. Testing of this It took ~3.2 hours on a single node on SDSC Expanses (w/ 128 cores and 256G Ram) and it uses inputs 20 Java threads and memory requirements (10GB per cpu) at starttime. A threaded calculation, with too little RAM/thread (cpu) may start up, generate some catalogs, then exits on out of memory. On expanse this has happened when trying to run with less than 8GB/thread. 
+This is a single node example of UCERF3-ETAS simulations with 10,000 catalogs. The config.json configuration file is generated using the same input parameters as test case 1. However, this test case is configured to run on an Expanse compute node, and not on a laptop. The many cores (128) on an Expanse node should reduce the time required to generate the catalogs as compared to a laptop. 
 
 ## Outputs
 When both the catalog generations and the plotting has run, the results are:
