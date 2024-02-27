@@ -1,4 +1,8 @@
 # Test case #2
+
+This repo contains a slurm script that is configured to run on a single node SDSC Expanse. Tests completed in ~3.2 hours on a single node on SDSC Expanses (w/ 128 cores and 256G Ram) and it uses inputs 20 Java threads and memory requirements (10GB per cpu) at starttime. A threaded calculation, with too little RAM/thread (cpu) may start up, generate some catalogs, then exits on out of memory. On expanse this has happened when trying to run with less than 8GB/thread. 
+
+
 This test case runs the same ETAS Simulation with 10000 catalogs on a single Expanse Node.
 The scripts to generate the generate the configuration file, and run the launcher are similar to the test case 1 commands.
 Define a path to the lustre file system.
