@@ -1,4 +1,12 @@
 # Test case #2
+This test case runs the same ETAS Simulation with 10000 catalogs on a single Expanse Node.
+The scripts to generate the generate the configuration file, and run the launcher are similar to the test case 1 commands.
+````
+$ u3etas_comcat_event_config_builder.sh --event-id ci38457511 --num-simulations 10 --days-before 7 --finite-surf-shakemap --finite-surf-shakemap-min-mag 5 --output-dir target/test_case_2 --random-seed 123456789
+$ u3etas_launcher.sh target/test_case_1/config.json
+````
+
+
 <pre>
 This Test Case runs 10k simulations on a single node. 
 This test case generates ETAS catalogs after the Ridgecrest M7.1.
