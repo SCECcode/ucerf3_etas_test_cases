@@ -6,7 +6,13 @@
 #
 # 
 from pathlib import Path
-import os, os.path, sys
+import os, os.path, sys, random, string, time
+import subprocess
+
+def generate_custom_id():
+    timestamp = str(int(time.time()))
+    random_chars = ''.join(random.choices(string.ascii_uppercase + string.digits, k=8))
+    return f"QW.{timestamp}.{random_chars}"
 
 def get_file_sizes(root_dir):
     file_sizes = {}
@@ -29,6 +35,9 @@ def print_file_sizes(root_dir):
         formatted_size = format_size(size)
         print(f"{file}: {formatted_size}")
 
+def du(path):
+    """disk usage in human readable format (e.g. '2,1GB')"""
+    return subprocess.check_output(['du','-sh', path]).split()[0].decode('utf-8')
 #
 # Count different aspects of the input directory using command line parameters
 # -f # of files
@@ -47,12 +56,14 @@ else:
 #
 #
 #
+SimID = generate_custom_id()
+print("SimID:",SimID)
 path = Path(root)
-print("RootDir:",path)
+print("RootDir:",root)
+print("RootDirPath:",path)
 print("Num of Folders + Files:", sum(1 for _ in path.rglob('*')))  # Files and folders, recursive
 print("Num of Files:",sum(1 for x in path.rglob('*') if x.is_file()))  # Only files, recursive
-print("FileSizes:",root)
-print_file_sizes(root)
+print("DirSize:",du(root))
 #
 # Print the Directories
 #
