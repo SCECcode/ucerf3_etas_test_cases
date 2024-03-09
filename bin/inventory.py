@@ -6,12 +6,12 @@
 #
 # 
 from pathlib import Path
-import os, os.path, sys, random, string, time
+import os, os.path, sys, random, string, time, json
 import subprocess
 
 def generate_custom_id():
     timestamp = str(int(time.time()))
-    random_chars = ''.join(random.choices(string.ascii_uppercase + string.digits, k=8))
+    random_chars = ''.join(random.choices(string.ascii_uppercase + string.digits, k=6))
     return f"QW.{timestamp}.{random_chars}"
 
 def get_file_sizes(root_dir):
@@ -39,12 +39,10 @@ def du(path):
     """disk usage in human readable format (e.g. '2,1GB')"""
     return subprocess.check_output(['du','-sh', path]).split()[0].decode('utf-8')
 #
+# ToDo:
 # Count different aspects of the input directory using command line parameters
 # -f # of files
 # -d # of files + directories
-
-#print(f"Name of the script      : {sys.argv[0]=}")
-#print(f"Arguments of the script : {sys.argv[1:]=}")
 
 nvals = len(sys.argv)
 
@@ -54,19 +52,55 @@ else:
   root = sys.argv[1]
 
 #
+# Assemble the metadata file this sim.
 #
-#
+dirdict = {}
+
 SimID = generate_custom_id()
+dirdict.update({"SimID":SimID})
 print("SimID:",SimID)
+
+#
+# Create path for root directory
+#
 path = Path(root)
-print("RootDir:",root)
-print("RootDirPath:",path)
-print("Num of Folders + Files:", sum(1 for _ in path.rglob('*')))  # Files and folders, recursive
+dirdict.update({"RootPath":root})
+print("RootPath:",root)
+nFiles=sum(1 for x in path.rglob('*') if x.is_file())
+dirdict.update({"NumFiles":nFiles})
 print("Num of Files:",sum(1 for x in path.rglob('*') if x.is_file()))  # Only files, recursive
-print("DirSize:",du(root))
+nDirsFiles  = sum(1 for _ in path.rglob('*'))
+dirdict.update({"NumDirsFiles":nDirsFiles})
+print("Num of Folders + Files:", sum(1 for _ in path.rglob('*')))  # Files and folders, recursive
+StorageSize = du(root)
+dirdict.update({"TotalDirSize":StorageSize})
+print("TotalDirSize:",du(root))
+#
+# print the Metadata so far
+#
+print(dirdict)
+
+#
+# Create a list of tuples. They all have the same ID, so they collide in a dict
+#
+# "FileName":<filename>
+
+dirlist = []
 #
 # Print the Directories
 #
 for path, subdirs, files in os.walk(root):
     for filename in files:
-        print(os.path.join(path, filename))
+        dirlist.append({"FileName":os.path.join(path, filename)})
+
+print("Lines In Metadata",len(dirlist) + len(dirdict))
+
+# metadata json file
+json_string = json.dumps(dirdict) + json.dumps(dirlist)
+
+fname = "%s.json"%(SimID)
+with open(fname, "w") as write_file:
+    json.dump(dirdict, write_file, indent = 4)
+    json.dump(dirlist, write_file, indent = 4)
+
+print("Completed")
