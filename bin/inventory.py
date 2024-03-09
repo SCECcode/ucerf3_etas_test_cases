@@ -8,6 +8,8 @@
 from pathlib import Path
 import os, os.path, sys, random, string, time, json
 import subprocess
+from datetime import datetime
+
 
 def generate_custom_id():
     timestamp = str(int(time.time()))
@@ -61,6 +63,20 @@ dirdict.update({"SimID":SimID})
 print("SimID:",SimID)
 
 #
+# Collect Time Information
+#
+# Getting the current date and time
+dt = datetime.now()
+iso_date = dt.isoformat()
+print('CreationDate:', iso_date)
+dirdict.update({"CreationDate":iso_date})
+
+# getting the timestamp
+ts = datetime.timestamp(dt)
+dirdict.update({"Timestamp":ts})
+print("Timestamp:", ts)
+
+#
 # Create path for root directory
 #
 path = Path(root)
@@ -91,16 +107,17 @@ dirlist = []
 #
 for path, subdirs, files in os.walk(root):
     for filename in files:
-        dirlist.append({"FileName":os.path.join(path, filename)})
+        dirlist.append(os.path.join(path, filename))
 
-print("Lines In Metadata",len(dirlist) + len(dirdict))
 
-# metadata json file
-json_string = json.dumps(dirdict) + json.dumps(dirlist)
+# This adds a json element called FileList which is a list of files.
+# These can be further shortened by removing the base dir which is duplicated currently
+dirdict.update({"FileList":dirlist})
+
+print("Lines In Metadata",len(dirdict))
 
 fname = "%s.json"%(SimID)
 with open(fname, "w") as write_file:
     json.dump(dirdict, write_file, indent = 4)
-    json.dump(dirlist, write_file, indent = 4)
 
 print("Completed")
