@@ -25,7 +25,7 @@ def summary_of_storage(path,direc):
     #
     StorageSize = du(path)
     direc.update({"TotalDataSetSize": StorageSize})
-    #print(direc)
+    print("TotalDataSetSize",StorageSize)
     return direc
 
 def output_list_of_files(path,direc):
